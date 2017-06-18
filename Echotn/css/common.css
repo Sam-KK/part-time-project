@@ -1,0 +1,148 @@
+﻿@charset "utf-8";
+/* CSS Document */
+html {
+    -webkit-tap-highlight-color: transparent;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, tr, th, td {
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: #333;
+    line-height: 1;
+    font-family: "Microsoft Yahei";
+}
+/* H5 */
+header, section, footer, aside, nav, main, article, figure {
+    display: block;
+}
+td, th, caption {
+    font-size: 14px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+    font-weight: normal;
+}
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+img {
+    display: block;
+    width: 100%;
+    border: none;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+input, textarea, select, button {
+    font: 14px Microsoft Yahei;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+em, i {
+    font-style: normal;
+}
+
+/* 清浮动 */
+.clearFix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearFix {
+    clear: both;
+    overflow: hidden;
+    *zoom: 1;
+}
+.col {
+    display: block;
+    padding-left: 0.32rem;
+    padding-right: 0.32rem;
+}
+/*垂直居中样式*/
+.flex {
+    display: -webkit-box;    /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box;       /* 老版本语法: Firefox (buggy)  */
+    display: -ms-flexbox;    /* 混合版本语法: IE 10 */
+    display: -webkit-flex;   /* 新版本语法： Chrome 21+ */
+    display: flex;           /* 新版本语法： Opera 12.1, Firefox 22+ */
+
+    -webkit-flex-flow: row nowrap;
+       -moz-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+         -o-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+
+    /*水平居中*/ /*老版本语法*/
+    -webkit-box-pack: center;
+       -moz-box-pack: center; /*混合版本语法*/
+       -ms-flex-pack: center; /*新版本语法*/
+    -webkit-justify-content: center;
+       -moz-justify-content: center;
+        -ms-justify-content: center;
+         -o-justify-content: center;
+     -khtml-justify-content: center;
+            justify-content: center;
+
+    /*垂直居中*/	/*老版本语法*/
+    -webkit-box-align: center;
+       -moz-box-align: center; /*混合版本语法*/
+    -webkit-align-items: center; /*新版本语法*/
+       -moz-align-items: center;
+        -ms-align-items: center;
+         -o-align-items: center;
+     -khtml-align-items: center;
+            align-items: center;
+}
+.flex-1 {
+    -webkit-box-flex: 1;
+       -moz-box-flex: 1;
+        -ms-box-flex: 1;
+         -o-box-flex: 1;
+            box-flex: 1;
+    -webkit-flex: 1;
+       -moz-flex: 1;
+        -ms-flex: 1;
+         -o-flex: 1;
+     -khtml-flex: 1;
+            flex: 1;
+}
+/*header*/
+.header {
+    width: 100%;
+}
+/*layout*/
+.wrapper {
+    position: relative;
+    width: 10rem;
+    margin: 0 auto;
+}
+/*footer*/
+.footer {
+
+    width: 100%;
+    height: 1.28rem;
+    text-align: center;
+    background: #333;
+}
+.footer .copyright p {
+    font-size: .32rem;
+    color: #fff;
+    line-height: .48rem;
+}
