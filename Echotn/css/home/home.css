@@ -2,8 +2,8 @@
 /* CSS Document */
 /* 轮播 */
 #slider .swiper-pagination .swiper-pagination-bullet {
-	width: .48rem;
-	height: .12rem;
+	width: 0.48rem;
+	height: 0.08rem;
 	background: #506273;
 	-webkit-opacity: 1;
 	-moz-opacity: 1;
@@ -24,13 +24,13 @@
 .vertical .soft-title {
 	color: #333;
 	text-align: center;
-	font-size: .4rem;
-	height: 1.52rem;
-	line-height: 1.52rem;
-	background: -webkit-linear-gradient(#d4e1d2, #e5ede4, #fff);
-       background: -moz-linear-gradient(#d4e1d2, #e5ede4, #fff);
-         background: -o-linear-gradient(#d4e1d2, #e5ede4, #fff);
-            background: linear-gradient(#d4e1d2, #e5ede4, #fff);
+	font-size: 0.48rem;
+	height: 1.48rem;
+	line-height: 1.48rem;
+	background: -webkit-linear-gradient(#d1dfcf, #eaf1ea, #fff);
+       background: -moz-linear-gradient(#d1dfcf, #eaf1ea, #fff);
+         background: -o-linear-gradient(#d1dfcf, #eaf1ea, #fff);
+            background: linear-gradient(#d1dfcf, #eaf1ea, #fff);
 }
 .vertical .soft-title .sign-text {
 	color: #35bd22;
@@ -60,8 +60,8 @@
 	border-left: 1px solid #ebebeb;
 }
 .icon-wrap {
-	width: 1rem;
-	height: 1rem;
+	width: 0.96rem;
+	height: 0.96rem;
 	margin-bottom: .3733rem;
 }
 .icon-wrap img {
@@ -69,7 +69,7 @@
 }
 .soft-info {
 	color: #666;
-	font-size: .3467rem;
+	font-size: 0.3467rem;
 }
 
 /* 成功案例 */
@@ -78,8 +78,10 @@
 	padding-bottom: .88rem;
 }
 .case-slider .swiper-slide {
-	width: 64% !important;
-	margin-right: .2933rem;
+	margin-right: .2933rem !important;
+}
+.case-slider .swiper-slide:last-child {
+	margin-right: 0 !important;
 }
 .hes_bt1_bt {
 	padding-top: .4rem;
@@ -91,12 +93,12 @@
 }
 .hes_bt1_bt h2 {
 	color: #000;
-	font-size: .3733rem;
-	margin-bottom: .2rem;
+	font-size: 0.3467rem;
+	margin-bottom: .28rem;
 }
 .hes_bt1_bt p {
 	color: #666;
-	font-size: .32rem;
+	font-size: 0.2667rem;
 	line-height: .4267rem;
 	overflow : hidden;
 	text-overflow: ellipsis;
@@ -105,15 +107,15 @@
 	-webkit-box-orient: vertical;
 }
 .view-more {
-	font-size: .32rem;
+	font-size: 0.32rem;
 	color: #999;
 }
 .view-more span {
 	display: inline-block;
-	font-size: .5rem;
+	font-size: 0.4rem;
 	color: #ccc;
 	vertical-align: middle;
-	margin-left: .2rem;
+	margin-left: .1333rem;
 }
 /*panel-group*/
 .panel-group {
@@ -131,6 +133,14 @@
 .panel .panel-head .panel-icon span {
 	display: inline-block;
 	color: #ccc;
+	width: 0;
+	height: 0;
+	border-left: 0.18rem solid transparent;
+	border-right: 0.18rem solid transparent;
+	border-top: 0.2rem solid #cccccc;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
 	-webkit-transition: all .2s;
 	   -moz-transition: all .2s;
 	    -ms-transition: all .2s;
@@ -178,7 +188,7 @@
 }
 .product-panel li {
 	color: #666;
-	font-size: .32rem;
+	font-size: 0.3467rem;
 	line-height: .56rem;
 }
 /*新闻动态*/
@@ -212,7 +222,7 @@
 }
 .new-lsit .new-time {
 	color: #999;
-	font-size: .2667rem;
+	font-size: 0.2933rem;
 }
 /*about-us*/
 .about-us {
@@ -220,7 +230,7 @@
 	margin-top: .24rem;
 }
 .about-con .about-text {
-	color: #999;
+	color: #666;
 	font-size: .32rem;
 	line-height: .5867rem;
 	padding-top: .4rem;

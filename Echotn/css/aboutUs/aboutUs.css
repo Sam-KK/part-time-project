@@ -39,9 +39,9 @@
     -o-flex: 1;
     -khtml-flex: 1;
     flex: 1;
-    height: 1rem;
+    height: 1.0133rem;
     color: #999;
-    font-size: .4rem;
+    font-size: 0.3733rem;
     border-bottom: 1px solid #e6e6e6;
 }
 .nav-tabs li.is-active {
@@ -63,18 +63,18 @@
     color: #999;
     line-height: 1rem;
     text-align: center;
-    margin-bottom: .2rem;
+    margin-bottom: .5rem;
 }
 .tab-content {
     overflow: hidden;
 }
 .tab-content .text-box {
-    margin-bottom: .56rem;
+    margin-bottom: .88rem;
 }
 .tab-content .text-box h3 {
     color: #333;
-    font-size: .56rem;
-    line-height: 1rem;
+    font-size: 0.4rem;
+    margin-bottom: .32rem;
 }
 .tab-content .text-box h4 {
     color: #666;
@@ -83,7 +83,7 @@
 }
 .tab-content .text-box p {
     color: #666;
-    font-size: .4rem;
+    font-size: 0.32rem;
     line-height: .64rem;
 }
 .tab-content .qualif-box img {

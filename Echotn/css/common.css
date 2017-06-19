@@ -3,7 +3,14 @@
 html {
     -webkit-tap-highlight-color: transparent;
 }
-
+@font-face {
+    font-family: PingFang Regular;
+    src: url("../font/PingFang Regular_2.ttf");
+}
+@font-face {
+    font-family: PingFang Medium;
+    src: url("../font/PingFang Medium_2.ttf");
+}
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, tr, th, td {
     margin: 0;
     padding: 0;
@@ -128,6 +135,109 @@ em, i {
 .header {
     width: 100%;
 }
+.sidebar-menu {
+    -webkit-z-index: 9;
+    -moz-z-index: 9;
+    -ms-z-index: 9;
+    -o-z-index: 9;
+    -khtml-z-index: 9;
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 620px;
+    background: #000;
+    /*-webkit-transform: translateX(620px);*/
+    /*-moz-transform: translateX(620px);*/
+    /*-ms-transform: translateX(620px);*/
+    /*-o-transform: translateX(620px);*/
+    /*transform: translateX(620px);*/
+}
+.close-menu {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    height: 0.88rem;
+    width: 0.88rem;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    color: transparent;
+}
+.close-menu:after, .close-menu:before {
+    /* this is the 'X' icon */
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    height: 0.56rem;
+    width: 2px;
+    background-color: #fff;
+}
+.close-menu:after {
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    -o-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+.close-menu:before {
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    -o-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+}
+.menu-list {
+    position: absolute;
+    padding-top: 0.88rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+}
+.menu-items {
+    padding-left: .56rem;
+    padding-right: .56rem;
+}
+.menu-label {
+    position: relative;
+    color: #fff;
+    font-size: 0.4267rem;
+    height: .88rem;
+    line-height: .88rem;
+}
+.menu-label:before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 10px;
+    margin-top: -0.08rem;
+    border: none;
+    border-left: 0.16rem solid transparent;
+    border-right: 0.16rem solid transparent;
+    border-top: 0.16rem solid;
+    width: 0;
+    height: 0;
+    display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+    margin-left: 3px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
 /*layout*/
 .wrapper {
     position: relative;
@@ -160,6 +270,14 @@ em, i {
     border-bottom: 1px solid #e6e6e6;
 }
 .head-box h1 {
+    color: #333;
+    font-size: 0.4267rem;
+    font-family: PingFang Medium;
+}
+.top-head {
+    height: 1.1733rem;
+}
+.top-head h1 {
     font-size: .4rem;
 }
 /*core-entry*/
@@ -202,7 +320,7 @@ em, i {
 }
 .enter-title {
     color: #333;
-    font-size: .32rem;
+    font-size: 0.3733rem;
     text-align: left;
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
@@ -217,14 +335,28 @@ em, i {
     flex: 1;
 }
 .arrow-right {
+    position: relative;
     color: #ccc;
 }
+.icon-arrow-right {
+    position: absolute;
+    top: 50%;
+    right: 0.24rem;
+    width: 0.24rem;
+    height: 0.24rem;
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+    border-color: #cccccc;
+    -webkit-transform-origin: 75% 25%;
+    -webkit-transform: rotateZ(45deg);
+    -webkit-transition: 100ms ease-in .1s;
+    transition: 100ms ease-in .1s;
+}
 .icon {
-    color: #35bd22;
-    font-size: .4rem;
+    width: 0.4267rem;
     display: inline-block;
-    vertical-align: middle;
-    margin-right: .2rem;
+    vertical-align: top;
+    margin-right: .32rem;
 }
 /*联系*/
 .contact .contact-con {
@@ -232,33 +364,37 @@ em, i {
 }
 .contact .contact-con h1 {
     color: #35bd22;
-    font-size: .6rem;
-    padding: .94rem 0;
+    font-size: 0.9067rem;
+    padding: 0.94rem 0;
+}
+.contact .contact-con h1 .icon-tel {
+    display: inline-block;
+    width: 0.8533rem;
+    vertical-align: top;
 }
 .contact-info p {
     color: #333;
-    font-size: .32rem;
-    line-height: .56rem;
+    font-size: 0.3733rem;
+    line-height: 0.64rem;
 }
 .contact-info figure {
     width: 4.32rem;
     margin: 0.8rem 0 0 0;
 }
 .contact-info figure p {
-    font-size: .3733rem;
+    font-size: 0.4rem;
     margin-top: .4rem;
 }
 
 /*footer*/
 .footer {
-
     width: 100%;
-    height: 1.28rem;
+    height: 1.2667rem;
     text-align: center;
     background: #333;
 }
 .footer .copyright p {
-    font-size: .32rem;
+    font-size: 0.2667rem;
     color: #fff;
-    line-height: .48rem;
+    line-height: 0.3733rem;
 }

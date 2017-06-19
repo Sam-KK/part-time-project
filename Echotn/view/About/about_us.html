@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="../../css/common.css">
     <link rel="stylesheet" href="../../css/aboutUs/aboutUs.css">
     <script src="../../js/flexible.debug.js"></script>
+    <script src="../../libs/Jquery/jquery-1.12.1.min.js"></script>
+    <script src="../../js/about.js"></script>
 </head>
 <body>
 <div class="wrapper" id="wrapper">
@@ -25,7 +27,7 @@
     <div class="content" id="content">
 
         <div class="about-container">
-            <div class="head-box col">
+            <div class="head-box top-head col">
                 <h1>关于我们</h1>
             </div>
 
@@ -44,7 +46,7 @@
                         </div>
                         <div class="tab-content">
                             <div class="text-box">
-                                <img src="../../images/About/p_01.png" alt="">
+                                <img src="../../images/common/pic_02.png" alt="">
                             </div>
                             <div class="text-box">
                                 <p>南京天顺迪诚科技有限公司（以下简称TSDC）成立于1999年，注册资金2000万元整，18年的数据保护、业务应急恢复经验使其成为行业领先的厂商。TSDC作为集生产、研发、制造为一体的IT企业，充分发挥“业精于专”和“求实创新”的精神，不断完善自身，拥有专业技术团队。在北京设有研发中心，自主研发OMSYS平台管理系统作为ECHOTN易通一体化融合设备的核心技术，通过了ISO90001质量管理体系和CCC产品质量管理体系认证。在上海设有办事处，负责华南、华东部分地区的业务，坚持品质优先，客户至上，卓越创新。</p>
@@ -61,9 +63,9 @@
                         </div>
                     </div>
                     <!-- 企业文化 -->
-                    <div class="tab-pane">
-                        <h1>公司简介</h1>
-                        <div class="srticle-info">
+                    <div class="tab-pane" style="display: none;">
+                        <h1>企业文化</h1>
+                        <div class="article-info">
                             2017-02-17 10:44:49
                             <span class="amount">点击次数：646次</span>
                         </div>
@@ -100,6 +102,7 @@
 
         <!-- enter -->
         <ul class="core-entry col">
+            <!--云产品-->
             <li class="label-act">
                 <a href="">
                     <div class="ico">
@@ -111,6 +114,7 @@
                     </div>
                 </a>
             </li>
+            <!--成功案例-->
             <li class="label-act">
                 <a href="">
                     <div class="ico">
@@ -122,6 +126,7 @@
                     </div>
                 </a>
             </li>
+            <!--在线下载-->
             <li class="label-act">
                 <a href="">
                     <div class="ico">
@@ -133,6 +138,7 @@
                     </div>
                 </a>
             </li>
+            <!--新闻资讯-->
             <li class="label-act">
                 <a href="../new/news.html">
                     <div class="ico">
@@ -144,8 +150,9 @@
                     </div>
                 </a>
             </li>
+            <!--关于我们-->
             <li class="label-act">
-                <a href="view/About/about_us.html">
+                <a href="about_us.html">
                     <div class="ico">
                         <span class="icon icon-we"></span>
                     </div>
