@@ -149,6 +149,10 @@ em, i {
     top: 0.38rem;
     width: 320px;
 }
+.logo img {
+    display: block;
+    width: 100%;
+}
 .nav-toggle {
     position: absolute;
     top: 0;
