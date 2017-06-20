@@ -144,13 +144,11 @@ em, i {
     background: #fff;
 }
 .logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.logo img {
     display: block;
-    width: 100%;
+    position: absolute;
+    top: 0.3467rem;
+    left: 0.32rem;
+    width: 4.267rem;
 }
 .nav-toggle {
     position: absolute;
@@ -161,15 +159,22 @@ em, i {
     border-left: 1px solid #e5e5e5;
     cursor: pointer;
 }
-.nav-toggle:before {
+.nav-toggle span {
     position: absolute;
-    content: "";
-    display: block;
-    top: 0.44rem;
     left: 0.4rem;
+    display: block;
     width: 0.56rem;
-    height: 0.4267rem;
-    background: url("../images/icon/crumbs.png") no-repeat center center;
+    height: 0.0533rem;
+    background: #999999;
+}
+.nav-toggle span:first-child {
+    top: 0.44rem;
+}
+.nav-toggle span:nth-child(2) {
+    top: 0.63rem;
+}
+.nav-toggle span:last-child {
+    bottom: 0.44rem;
 }
 /*sidebar-menu*/
 .mask {
