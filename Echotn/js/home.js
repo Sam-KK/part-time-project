@@ -56,4 +56,22 @@ $(function () {
         slidesPerView: 1.5,
         spaceBetween: 30
     });
+
+    // 下拉菜单
+    $(".panel .panel-head").on("click", function () {
+        // 判断对象是隐藏还是显示
+        if ($(this).next(".panel-collapse").is(":hidden")) {
+            // 如果是隐藏
+            if (!$(this).next(".panel-collapse").is(":animated")) {
+                $(this).children(".panel-icon").addClass("collapse-toggle").parents(".panel").siblings().find('.panel-icon').removeClass('collapse-toggle');
+                $(this).next('.panel-collapse').stop().slideDown().parents(".panel").siblings().find('.panel-collapse').stop().slideUp();
+            }
+        } else {
+            //  显示
+            if (!$(this).next('.panel-collapse').is(":animated")) {
+                $(this).children(".panel-icon").removeClass("collapse-toggle");
+                $(this).next(".panel-collapse").stop().slideUp();
+            }
+        }
+    });
 });
