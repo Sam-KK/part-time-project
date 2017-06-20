@@ -145,9 +145,8 @@ em, i {
 }
 .logo {
     position: absolute;
-    left: 0.32rem;
-    top: 0.38rem;
-    width: 4.2667rem;
+    top: 0;
+    left: 0;
 }
 .logo img {
     display: block;
