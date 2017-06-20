@@ -78,6 +78,9 @@ em, i {
     overflow: hidden;
     *zoom: 1;
 }
+.overflow-hidden {
+    overflow: hidden !important;
+}
 .col {
     display: block;
     padding-left: 0.32rem;
@@ -210,15 +213,17 @@ em, i {
 .menu-items {
     padding-left: .56rem;
     padding-right: .56rem;
+    border-bottom: 1px solid #fff;
 }
 .menu-label {
     position: relative;
+    display: block;
     color: #fff;
     font-size: 0.4267rem;
-    height: .88rem;
-    line-height: .88rem;
+    height: 1rem;
+    line-height: 1rem;
 }
-.menu-label:before {
+.has-children .menu-label:before {
     position: absolute;
     content: "";
     top: 50%;
@@ -238,7 +243,24 @@ em, i {
     -o-transition: .3s;
     transition: .3s;
 }
-/*layout*/
+.has-children .menu-label.is-active:before {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.menu-items .dropdown {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+.menu-items .dropdown a {
+    display: block;
+    height: 1rem;
+    line-height: 1rem;
+}
+    /*layout*/
 .wrapper {
     position: relative;
     width: 10rem;
