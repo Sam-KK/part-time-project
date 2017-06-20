@@ -1,4 +1,27 @@
 $(function () {
+    // 面包屑导航
+    if ('ontouchstart' in window) {
+        var click = 'touchstart';
+    } else {
+        var click = 'click';
+    }
+    $(".event-menu-toogle").on("click", function(){
+        $("body").addClass("overflow-hidden");
+        $(".sidebar-menu,.mask").toggleClass("menu-open");
+        toggleNav();
+    });
+    // close
+    $(".event-close-menu,.mask").on("click", function () {
+        $("body,.sidebar-menu,.mask").removeClass("menu-open");
+        toggleNav();
+        $("body").removeClass("overflow-hidden");
+    });
+    function toggleNav(){
+        var navIsVisible = ($('.sidebar-menu').hasClass('menu-open')) ? true : false;
+        $('.sidebar-menu').toggleClass('menu-open', navIsVisible);
+        $('.event-menu-toogle').toggleClass('menu-open', navIsVisible);
+    }
+
     // 侧边栏菜单
     // 绑定元素点击事件
     $(".has-children .menu-label").click(function(event) {
