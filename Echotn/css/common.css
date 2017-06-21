@@ -80,6 +80,7 @@ em, i {
 }
 .overflow-hidden {
     overflow: hidden !important;
+    height: 100% !important;
 }
 .col {
     display: block;
@@ -221,7 +222,7 @@ em, i {
     right: 0;
     height: 100%;
     width: 8rem;
-    background: #3a3a3a;
+    background: rgba(51, 51, 51, .95);
     -webkit-transform: translateX(8rem);
        -moz-transform: translateX(8rem);
         -ms-transform: translateX(8rem);
@@ -293,10 +294,13 @@ em, i {
     position: relative;
     display: block;
     color: #fff;
-    font-size: 0.4267rem;
-    padding: 0 0.48rem;
+    font-size: 0.4rem;
+    padding: 0 0.5067rem;
     height: 1.2rem;
     line-height: 1.2rem;
+}
+.has-children .menu-label.is-active {
+    background: #333;
 }
 .has-children .menu-label:before {
     position: absolute;
@@ -333,15 +337,20 @@ em, i {
 .menu-items .dropdown a {
     display: block;
     color: #ccc;
-    padding: 0 0.48rem;
+    font-size: 0.3467rem;
+    padding: 0 0.5067rem;
     height: 1.2rem;
     line-height: 1.2rem;
     background: #333;
-    border-bottom: 1px solid #4d4d4d;
+    border-bottom: 1px solid #4c4c4c;
+}
+.menu-items .dropdown a:last-child {
+    border-bottom: none;
 }
 .menu-items.current .menu-label {
     color: #35bd22;
-    border-bottom: 1px solid #000;
+    background: #333;
+    border-bottom: 1px solid #1a1a1a;
 }
 /*layout*/
 .wrapper {
@@ -349,7 +358,7 @@ em, i {
     width: 10rem;
     margin: 0 auto;
 }
-.successful-case, .news-block, .core-entry, .contact {
+.successful-case, .news-block, .core-entry, .contact, .content-wrap {
     margin-top: .24rem;
     background: #fff;
 }
@@ -381,6 +390,10 @@ em, i {
 }
 .top-head {
     height: 1.1733rem;
+    background: -webkit-linear-gradient(#d1dfcf, #fff);
+       background: -moz-linear-gradient(#d1dfcf, #fff);
+         background: -o-linear-gradient(#d1dfcf, #fff);
+            background: linear-gradient(#d1dfcf, #fff);
 }
 .top-head h1 {
     font-size: .4rem;

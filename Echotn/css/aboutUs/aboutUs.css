@@ -1,10 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-.about-tab-container {
-    background: #fff;
-    margin-top: .24rem;
-}
 .nav-tabs {
     display: -webkit-box;
     display: -moz-box;

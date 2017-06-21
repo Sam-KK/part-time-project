@@ -3,31 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <title>ECHOTN易通在南京医药恢复演练系统中顺利启用oracle rac数据</title>
-    <link rel="stylesheet" href="../../iconfont/style.css">
     <link rel="stylesheet" href="../../css/common.css">
     <link rel="stylesheet" href="../../css/news/news.css">
     <script src="../../js/flexible.debug.js"></script>
+    <script src="../../libs/Jquery/jquery-1.12.1.min.js"></script>
+    <script src="../../js/common.js"></script>
 </head>
 <body>
 <div class="wrapper" id="wrapper">
     <!-- header -->
     <div class="header" id="header">
         <div class="header-container">
-            <h1 class="logo">
-                <a href="../../index.html" title="">
-                    <img src="../../images/common/header.png" alt="">
-                </a>
-            </h1>
+            <a class="logo" href="../../index.html" title="">
+                <img src="../../images/icon/logo.png" alt="">
+            </a>
+            <div class="nav-toggle event-menu-toogle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="sidebar-menu" id="sidebar-menu">
+            <a href="#" class="close-menu event-close-menu"></a>
+            <ul class="menu-list">
+                <li class="menu-items current">
+                    <a href="../../index.html" class="menu-label">首页</a>
+                </li>
+                <li class="menu-items has-children">
+                    <a href="" class="menu-label">云产品</a>
+                    <div class="dropdown">
+                        <a href="">VDR-310 超融合设备</a>
+                        <a href="">VDR-320 超融合容灾系统</a>
+                        <a href="">VDR-410 应急恢复系统</a>
+                        <a href="">VDR-510 存储高可用系统</a>
+                        <a href="">VDR-T10 异地容灾设备</a>
+                    </div>
+                </li>
+                <li class="menu-items">
+                    <a href="" class="menu-label">成功案例</a>
+                </li>
+                <li class="menu-items">
+                    <a href="" class="menu-label">在线下载</a>
+                </li>
+                <li class="menu-items">
+                    <a href="" class="menu-label">新闻资讯</a>
+                </li>
+                <li class="menu-items has-children">
+                    <a href="" class="menu-label">关于我们</a>
+                    <div class="dropdown">
+                        <a href="">公司简介</a>
+                        <a href="">企业文化</a>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 
     <!-- 内容区域 -->
     <div class="content" id="content">
         <div class="container news-container">
-            <div class="head-box col">
+            <div class="head-box top-head col">
                 <h1>新闻资讯</h1>
             </div>
-            <div class="news-con col">
+            <div class="news-con content-wrap col">
                 <div class="tab-pane">
                     <h1>ECHOTN易通在南京医药恢复演练系统中顺利启用oracle rac数据</h1>
                     <div class="article-info">
@@ -71,10 +109,13 @@
 
         <!-- enter -->
         <ul class="core-entry col">
+            <!--云产品-->
             <li class="label-act">
                 <a href="">
                     <div class="ico">
-                        <span class="icon icon-cloud"></span>
+                        <span class="icon icon-cloud">
+							<img src="../../images/icon/icon-cloud.png" alt="">
+						</span>
                     </div>
                     <div class="enter-title">云产品</div>
                     <div class="arrow-right">
@@ -82,10 +123,13 @@
                     </div>
                 </a>
             </li>
+            <!--成功案例-->
             <li class="label-act">
                 <a href="">
                     <div class="ico">
-                        <span class="icon icon-case"></span>
+                        <span class="icon icon-case">
+							<img src="../../images/icon/case-icon.png" alt="">
+						</span>
                     </div>
                     <div class="enter-title">成功案例</div>
                     <div class="arrow-right">
@@ -93,10 +137,13 @@
                     </div>
                 </a>
             </li>
+            <!--在线下载-->
             <li class="label-act">
-                <a href="">
+                <a href="../download/download.html">
                     <div class="ico">
-                        <span class="icon icon-download"></span>
+                        <span class="icon icon-download">
+							<img src="../../images/icon/download.png" alt="">
+						</span>
                     </div>
                     <div class="enter-title">在线下载</div>
                     <div class="arrow-right">
@@ -104,10 +151,13 @@
                     </div>
                 </a>
             </li>
+            <!--新闻资讯-->
             <li class="label-act">
-                <a href="../new/news.html">
+                <a href="../../view/new/news.html">
                     <div class="ico">
-                        <span class="icon icon-new"></span>
+                        <span class="icon icon-new">
+							<img src="../../images/icon/new-icon.png" alt="">
+						</span>
                     </div>
                     <div class="enter-title">新闻资讯</div>
                     <div class="arrow-right">
@@ -115,27 +165,31 @@
                     </div>
                 </a>
             </li>
+            <!--关于我们-->
             <li class="label-act">
                 <a href="../../view/About/about_us.html">
                     <div class="ico">
-                        <span class="icon icon-we"></span>
+                        <span class="icon icon-we">
+							<img src="../../images/icon/about-us-icon.png" alt="">
+						</span>
                     </div>
                     <div class="enter-title">关于我们</div>
-                    <div class="arrow-right">
+                    <div class="arrow-right arrow-box">
                         <span class="icon-arrow-right arrow-right"></span>
                     </div>
                 </a>
             </li>
         </ul>
+
         <!-- 联系我们 -->
         <div class="contact">
             <div class="head-box col">
-                <h1><span class="icon icon-location"></span>联系ECHOTN</h1>
+                <h1><span class="icon icon-location"><img src="../../images/icon/contact-icon.png" alt=""></span>联系ECHOTN</h1>
             </div>
 
             <div class="contact-con col">
                 <h1 class="">
-                    <span class="icon-tel"></span>
+                    <span class="icon-tel"><img src="../../images/icon/tel-icon.png" alt=""></span></span>
                     400-900-8028
                 </h1>
 
@@ -152,14 +206,17 @@
             </div>
         </div>
     </div>
-</div>
 
-<!-- footer -->
-<div class="footer flex" id="footer">
-    <div class="copyright">
-        <p>2010 - 1017 南京天顺迪诚科技有限公司版权所有</p>
-        <p>苏ICP备05037190号</p>
+    <!-- footer -->
+    <div class="footer flex" id="footer">
+        <div class="copyright">
+            <p>2010 - 1017 南京天顺迪诚科技有限公司版权所有</p>
+            <p>苏ICP备05037190号</p>
+        </div>
     </div>
+
+    <!-- mask -->
+    <div class="mask" id="mask"></div>
 </div>
 </body>
 </html>

@@ -78,7 +78,7 @@
 	padding-bottom: .88rem;
 }
 .case-slider .swiper-slide {
-	margin-right: .2933rem !important;
+	/*margin-right: .2933rem !important;*/
 }
 .case-slider .swiper-slide:last-child {
 	margin-right: 0 !important;
