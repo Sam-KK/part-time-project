@@ -107,16 +107,30 @@
 	-webkit-box-orient: vertical;
 }
 .view-more {
+	display: inline-block;
 	font-size: 0.32rem;
 	color: #999;
-}
-.view-more span {
-	display: inline-block;
-	font-size: 0.4rem;
-	color: #ccc;
 	vertical-align: middle;
-	margin-left: .1333rem;
 }
+.view-more:after {
+	display: inline-block;
+	content: "";
+	width: 0.4rem;
+	height: 0.4rem;
+	margin-left: 0.1rem;
+	margin-top: -0.105rem;
+	background: url("../../images/icon/fill-right.png") no-repeat center center;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	vertical-align: middle;
+}
+/*.view-more span {*/
+	/*display: inline-block;*/
+	/*font-size: 0.4rem;*/
+	/*color: #ccc;*/
+	/*vertical-align: middle;*/
+	/*margin-left: .1333rem;*/
+/*}*/
 /*panel-group*/
 .panel-group {
 	margin-top: .24rem;
@@ -138,9 +152,9 @@
 	border-left: 0.18rem solid transparent;
 	border-right: 0.18rem solid transparent;
 	border-top: 0.2rem solid #cccccc;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
+	-webkit-border-radius: 2px;
+	   -moz-border-radius: 2px;
+	        border-radius: 2px;
 	-webkit-transition: all .2s;
 	   -moz-transition: all .2s;
 	    -ms-transition: all .2s;
@@ -158,7 +172,9 @@
 	border-top: 1px solid #e6e6e6;
 }
 .panel-body {
-	padding: .4rem 0;
+	padding-top: 0.32em;
+	padding-bottom: 0.32rem;
+	/*border-top: 1px solid #ebebeb;*/
 }
 .panel-body a {
 	-webkit-flex: 1;
@@ -174,11 +190,11 @@
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	-webkit-justify-content: space-between;
-	-moz-justify-content: space-between;
-	-ms-justify-content: space-between;
-	-o-justify-content: space-between;
-	justify-content: space-between;
+	-webkit-justify-content: flex-start;
+	   -moz-justify-content: flex-start;
+	    -ms-justify-content: flex-start;
+	     -o-justify-content: flex-start;
+	        justify-content: flex-start;
 	-webkit-box-align: center;
 	-moz-box-align: center;
 	-ms-flex-align: center;
@@ -187,9 +203,12 @@
 	width: 100%;
 }
 .product-panel li {
+	flex: 1;
+}
+.panel-wrap li {
 	color: #666;
 	font-size: 0.3467rem;
-	line-height: .56rem;
+	line-height: 0.72rem;
 }
 /*新闻动态*/
 .new-lsit {

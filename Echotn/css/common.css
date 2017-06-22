@@ -217,27 +217,29 @@ em, i {
     -khtml-z-index: 9;
     z-index: 9;
     position: fixed;
+    left: 100%;
     top: 0;
     bottom: 0;
-    right: 0;
+    /*right: 0;*/
     height: 100%;
     width: 8rem;
     background: rgba(51, 51, 51, .95);
-    -webkit-transform: translateX(8rem);
-       -moz-transform: translateX(8rem);
-        -ms-transform: translateX(8rem);
-         -o-transform: translateX(8rem);
-            transform: translateX(8rem);
+    /*-webkit-transform: translateX(8rem);*/
+       /*-moz-transform: translateX(8rem);*/
+        /*-ms-transform: translateX(8rem);*/
+         /*-o-transform: translateX(8rem);*/
+            /*transform: translateX(8rem);*/
     -webkit-transition: all .5s;
          -o-transition: all .5s;
             transition: all .5s;
 }
 .sidebar-menu.menu-open {
     visibility: visible;
-    -webkit-transform: translateX(0px);
-        -ms-transform: translateX(0px);
-         -o-transform: translateX(0px);
-            transform: translateX(0px);
+    left: 2rem;
+    /*-webkit-transform: translateX(0px);*/
+        /*-ms-transform: translateX(0px);*/
+         /*-o-transform: translateX(0px);*/
+            /*transform: translateX(0px);*/
 }
 .close-menu {
     position: absolute;
@@ -386,6 +388,7 @@ em, i {
 .head-box h1 {
     color: #333;
     font-size: 0.4267rem;
+    padding-top: 0.018rem;
     font-family: PingFang Medium;
 }
 .top-head {
