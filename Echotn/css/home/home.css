@@ -77,6 +77,9 @@
 	padding-top: .48rem;
 	padding-bottom: .88rem;
 }
+.case-slider .swiper-wrapper {
+	padding-bottom: 0.1rem;
+}
 .case-slider .swiper-slide {
 	/*margin-right: .2933rem !important;*/
 }
@@ -91,7 +94,8 @@
 	border-bottom: 1px solid #e6e6e6;
 
 }
-.hes_bt1_bt h2 {
+.hes_bt1_bt h2 a {
+	display: inline-block;
 	color: #000;
 	font-size: 0.3467rem;
 	margin-bottom: .28rem;

@@ -13,8 +13,19 @@
     margin-bottom: .4rem;
 }
 .pic-box {
+    position: relative;
     width: 3.24rem;
     height: 100%;
+}
+.corner {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    display: inline-block;
+    color: #fff;
+    font-size: .2667rem;
+    padding: 0.1rem 0.2rem;
+    background: rgba(53, 189, 34, .65);
 }
 .pic-box img {
     width: 100%;
@@ -54,8 +65,9 @@
 }
 .pic-info .pic-top a {
     color: #333;
-    font-size: .4rem;
+    font-size: .3733rem;
     line-height: .5067rem;
+    margin-bottom: 0.1rem;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -64,11 +76,11 @@
 }
 .pic-info .pic-top .timer {
     color: #999;
-    font-size: .32rem;
+    font-size: .24rem;
     line-height: .4267rem;
 }
 .pic-info .pic-text .pic-desc {
-    font-size: .32rem;
+    font-size: .2667rem;
     color: #999;
     line-height: .5rem;
     overflow: hidden;
@@ -86,16 +98,17 @@
 }
 .page .page-list li {
     display: inline-block;
-    font-size: .32rem;
     text-align: center;
 }
 .page .page-list li.pageMenu {
+    font-size: 0.3467rem;
     color: #999;
     width: 2.68rem;
     letter-spacing: 6px;
 }
 .page .page-list li.prevPage, .page .page-list li.nextPage {
     color: #fff;
+    font-size: 0.32rem;
     width: 2.16rem;
     height: .72rem;
     line-height: .72rem;
@@ -106,7 +119,7 @@
 }
 /*news and about*/
 .tab-pane h1 {
-    font-size: .56rem;
+    font-size: .48rem;
     color: #333;
     line-height: 1rem;
     text-align: center;
@@ -114,7 +127,7 @@
     margin-top: .4rem;
 }
 .article-info {
-    font-size: .4rem;
+    font-size: 0.2667rem;
     color: #999;
     line-height: 1rem;
     text-align: center;
@@ -128,8 +141,8 @@
 }
 .tab-content .text-box h3 {
     color: #333;
-    font-size: .56rem;
-    line-height: 1rem;
+    font-size: .3733rem;
+    line-height: 0.64rem;
 }
 .tab-content .text-box h4 {
     color: #666;
@@ -138,6 +151,6 @@
 }
 .tab-content .text-box p {
     color: #666;
-    font-size: .4rem;
+    font-size: .32rem;
     line-height: .64rem;
 }

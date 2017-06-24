@@ -357,7 +357,7 @@ em, i {
 /*layout*/
 .wrapper {
     position: relative;
-    width: 10rem;
+    // width: 10rem;
     margin: 0 auto;
 }
 .successful-case, .news-block, .core-entry, .contact, .content-wrap {
@@ -517,5 +517,15 @@ em, i {
 .footer .copyright p {
     font-size: 0.2667rem;
     color: #fff;
-    line-height: 0.3733rem;
+    line-height: 0.4533rem;
+}
+.badgel {
+    display: inline-block;
+    width: 0.2933rem;
+    height: 0.32rem;
+    background: url("../images/icon/badgel.png") no-repeat center center;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    margin-right: 0.12rem;
+    vertical-align: sub;
 }
