@@ -131,7 +131,7 @@
     color: #999;
     line-height: 1rem;
     text-align: center;
-    margin-bottom: .2rem;
+    margin-bottom: 0.6rem;
 }
 .tab-content {
     overflow: hidden;
@@ -139,15 +139,25 @@
 .tab-content .text-box {
     margin-bottom: .56rem;
 }
+.tab-content .text-box h2 {
+    font-size: 0.4rem;
+    color: #333;
+    margin-bottom: 0.48rem;
+}
 .tab-content .text-box h3 {
     color: #333;
     font-size: .3733rem;
-    line-height: 0.64rem;
+    margin-bottom: 0.3733rem;
 }
 .tab-content .text-box h4 {
     color: #666;
-    font-size: .4533rem;
-    line-height: .64rem;
+    font-size: .3733rem;
+    margin-bottom: 0.2667rem;
+}
+.tab-content .text-box h5 {
+    font-size: 0.32rem;
+    color: #333;
+    margin-bottom: 0.2667rem;
 }
 .tab-content .text-box p {
     color: #666;

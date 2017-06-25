@@ -5,6 +5,7 @@
     margin: 0.94rem 0;
 }
 .download-con {
+    padding-bottom: 1.733rem;
     overflow: hidden;
 }
 .download-con .order-text {
@@ -24,6 +25,22 @@
     font-size: 0.32rem;
     font-style: italic;
     margin-left: 0.2rem;
+}
+.payment-info {
+    color: #333232;
+    text-align: center;
+    margin-bottom: 1.73rem;
+}
+.payment-info figure img {
+    width: 1.44rem;
+    margin: 0 auto 0.92rem auto;
+}
+.payment-info figure p {
+    font-size: 0.48rem;
+    margin-bottom: 0.2rem;
+}
+.payment-info figure figcaption {
+    font-size: 0.32rem;
 }
 .download-order {
     display: -webkit-box;
@@ -47,13 +64,24 @@
 .download-order .order-items {
     width: 4.533rem;
     margin-bottom: .4rem;
-}.order-selected-items {
-     display: -webkit-box;
-     display: -moz-box;
-     display: -ms-flexbox;
-     display: -webkit-flex;
-     display: flex;
- }
+}
+.order-selected-items {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    -khtml-align-items: center;
+    align-items: center;
+    border: 1px solid #d6d6d6;
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+}
 .order-img {
     height: auto;
     text-align: center;
@@ -62,16 +90,24 @@
        -moz-border-radius: 0.0533rem;
             border-radius: 0.0533rem;
 }
+.select-img-box {
+    width: 3.12rem;
+    border: none;
+    border-right: 1px solid #d6d6d6;
+}
 .order-img img {
     display: block;
     width: 100%;
     border: none;
 }
 .order-info {
+    background: #fff;
     padding-top: 0.3067rem;
     padding-bottom: 0.32rem;
     border-left: 1px solid #d6d6d6;
     border-right: 1px solid #d6d6d6;
+    border-bottom: 1px solid #d6d6d6;
+    margin-bottom: -1px;
 }
 .order-info .order-name {
     color: #3b3d40;
@@ -80,6 +116,82 @@
 }
 .order-info .order-type {
     font-size: .32rem;
+}
+.order-selected-items .select-info {
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    -o-flex: 1;
+    -khtml-flex: 1;
+    flex: 1;
+    border: none;
+}
+.order-selected-items .checkbox-select {
+    width: 2.4533rem;
+    text-align: center;
+}
+.checkbox-select label {
+    position: relative;
+    display: inline-block;
+    width: 1.6rem;
+    height: 0.9333rem;
+}
+.checkbox-select label input[type=checkbox] {
+    -webkit-z-index: 5;
+    -moz-z-index: 5;
+    -ms-z-index: 5;
+    -o-z-index: 5;
+    -khtml-z-index: 5;
+    z-index: 5;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    -ms-opacity: 0;
+    -o-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+    overflow: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+.checkbox-select label span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #b0b3b1;
+    border: 1px solid #b0b3b1;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.checkbox-select label input[type=checkbox]:checked + span {
+    background: #35bd22;
+    border: 1px solid #35bd22;
+}
+.checkbox-select label span:after {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-0.24rem, -0.18rem);
+    -moz-transform: translate(-0.24rem, -0.18rem);
+    -ms-transform: translate(-0.24rem, -0.18rem);
+    -o-transform: translate(-0.24rem, -0.18rem);
+    transform: translate(-0.24rem, -0.18rem);
+    display: inline-block;
+    content: "";
+    width: 0.48rem;
+    height: 0.36rem;
+    background: url("../../images/download/checked.png") no-repeat center center;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+
 }
 /*all this could be yours cold war kids*/
 .select-box {
@@ -291,7 +403,7 @@
 }
 .button-group {
     text-align: center;
-    margin: 1.1rem 0;
+    margin-top: 1.1rem;
 }
 .button-group .next-step {
     display: inline-block;

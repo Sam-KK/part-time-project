@@ -1,0 +1,58 @@
+.cloud-items {
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify- -moz-box;
+    display: -ms-flexbox;
+    -webkit-box-align: center;
+    -moz-box-align: center; /*混合版本语法*/
+    -ms-flex-align: center; /*新版本语法*/
+    -webkit-align-items: center;
+    align-items: center;
+	position: relative;
+	margin-bottom: 0.64rem;
+}
+.cloud-items img {
+	display: inline-block;
+	width: 1.2rem;
+	margin-right: 0.3333rem;
+}
+.cloud-items .info span {
+	display: block;
+	color: #313131;
+	font-size: 0.3733rem;
+	font-weight: bold;
+	margin-bottom: 0.12rem;
+}
+.cloud-items .info p {
+	color: #666;
+	font-size: 0.32rem;
+	line-height: 0.4rem;
+}
+.level {
+	clear: both;
+	overflow: hidden;
+}
+.level .cloud-items {
+	width: 33%;
+	float: left;
+}
+.level .cloud-items img {
+	margin-right: 0.1867rem;
+}
+.level .cloud-items span {
+	font-size: 0.32rem;
+}
+.table {
+	border-radius: 6px;
+}
+.table-bordered>thead>tr>th {
+	height: 0.64rem;
+	color: #fff;
+	background: #1c92d0;
+}
+.table-bordered td {
+	height: 0.4rem;
+}

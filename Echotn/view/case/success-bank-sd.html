@@ -72,24 +72,31 @@
                         2016-10-10 11:16:00
                         <span class="amount">点击次数：1000次</span>
                     </div>
-                <div class="tab-content">
+                    <div class="tab-content">
                         <div class="text-box">
-                            <img src="../../images/news/news_list_06.png" alt="">
+                            <img src="../../images/case/case_11.jpg" alt="">
                         </div>
                         <div class="text-box">
                             <h3>项目简介</h3>
+                            <hr class="inline">
+                            <br>
                             <p>山东潍坊商业银行是一家区域性股份制商业银行，也是山东半岛地区成立的第四家城市商业银行，下辖13家区域客服中心、8家金融事业部，在潍坊区域设立52家支行，在青岛地区成立一家异地分行。</p>
+                            <br><br>
                             <p>为适应各项业务的迅猛发展，保障核心业务系统安全、稳定、持续地运行，增强抵御灾难和防范系统故障的能力，2013年，该行将应用级灾备项目建设列入IT建设计划，并且灾备中心设置在数十公里之外。出于对历史上IT系统各类多发事故的深入反思，对传统灾备技术防御能力不足的缺陷进行了分析，银行技术专家需要精准任意时间点定位恢复能力、针对各类故障的全防御能力、分层次本地/异地双重恢复体系、设备发生故障时的业务不停顿能力、数据跨远程窄带宽精简传输能力。</p>
                         </div>
                         <div class="text-box">
                             <h3>IT环境</h3>
-                            <p>IBM P550 HACMP集群服务器<br>
-                                AIX+ORACLE数据库 <br>
-                                EMC SAN存储 <br>
-                                20兆灾备传输带宽</p>
+                            <hr class="inline">
+                            <br>
+                            <p>IBM P550 HACMP集群服务器</p>
+                            <p>AIX+ORACLE数据库</p>
+                            <p>EMC SAN存储</p>
+                            <p>20兆灾备传输带宽</p>
                         </div>
                         <div class="text-box">
                             <h3>用户收获</h3>
+                            <hr class="inline">
+                            <br>
                             <p>数据备份和复制随时进行,不影响应用运行<br>
                                 生产磁盘发生故障时，保证业务不会中断<br>
                                 数据丢失分钟级恢复<br>
@@ -101,10 +108,29 @@
                         </div>
                         <div class="text-box">
                             <h3>解决方案</h3>
+                            <hr class="inline">
+                            <br>
                             <p>ECHOTN®易通应急恢复系统、存储高可用系统及异地容灾方案满足客户的需求：存储高可用系统可实现两存储中数据实时同步，双活双写。在本地生产中心发生数据库崩溃、磁盘故障等机房内灾难时，用户可以快速从站点内的备份系统即时恢复；当发生重大站点级灾难时，用户则可以通过灾备中心的异地备用系统实现业务接管。从而全面提高整体应用系统的业务连续运行能力，形成多层次、完整的灾备保障体系。</p>
                         </div>
                         <div class="text-box">
-                            <img src="../../images/news/news_list_06.png" alt="">
+                            <h4>多对一的低带宽、远距离精简式复制</h4>
+                            <p>ECHOTN®易通DSP系统内置的MicroScan精简传输技术，可以以每个扇区为单位只将发生变化的数据传输到远程，再配合压缩及带宽调节功能，使WAN网络在复制数据时达到最优。因此，生产中心与灾备中心之间也能通过用户仅有的20Mbps带宽，顺利的将数据复制到灾备中心。</p>
+                        </div>
+                        <div class="text-box">
+                            <h4>分钟级恢复，业务不中断</h4>
+                            <p>用户之前采用的传统备份方式，一旦发生磁盘故障、数据库崩溃等意外，就会导致至少4小时的业务停机和多达24小时的数据丢失。而先进的时间点快照技术，可以在生产磁盘故障时进行恢复，几分钟内恢复系统正常运行。恢复丢失或损坏的数据也可以通过提取历史快照瞬间完成，而无需经历冗长的磁带或磁盘回存过程。</p>
+                        </div>
+                        <div class="text-box">
+                            <img src="../../images/case/case_08.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <h4>远程容灾服务</h4>
+                            <p>ECHOTN®易通异地容灾方案可通过广域网或互联网，构建基于数据智能保护平台的远程数据复制，方便构建更高级别的异地容灾系统。</p>
+                            <br><br>
+                            <p>提供周期复制（Periodic Replication）和连续复制（Continuous Replication）模式。周期复制是结合快照技术的策略复制模式，依照使用者预设的策略启动复制作业，在本地端的ECHOTN®易通启动快照的同时，灾备端的数据智能保护方案也会产生一份快照，作为备份的副本磁盘，这些灾备端的快照副本同样可读可写，系统管理员可在灾备端运用快照副本，执行演练、测试、开发等作业。连续复制是数据智能保护方案提供的远程异步复制（Asynchronous Replication）。在此模式下，所有变化数据皆会实时被传送至远端站点的ECHOTN®易通设备上，RPO比周期复制模式小，即灾难发生后的数据丢失量较少。数据智能保护方案的远程复制使用了扇区扫描技术，仅需要传输发生改变的扇区而不是整个数据块，当网络带宽有限时，可将需要远程复制的数据量降到最少。内置的数据压缩功能进一步减少对带宽的要求，将广域网或互联网带宽容量的消耗减到最少，充分利用现有的带宽配置。数据智能保护方案的远程复制技术整合了带宽优化、加密、压缩等功能，可实现最好的性价比、最高的资源利用率以及最安全的数据传输。</p>
+                        </div>
+                        <div class="text-box">
+                            <img src="../../images/case/case_14.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -129,7 +155,7 @@
             </li>
             <!--成功案例-->
             <li class="label-act">
-                <a href="">
+                <a href="success-case.html">
                     <div class="ico">
                         <span class="icon icon-case">
 							<img src="../../images/icon/case-icon.png" alt="">
@@ -193,8 +219,12 @@
 
             <div class="contact-con col">
                 <h1 class="">
-                    <span class="icon-tel"><img src="../../images/icon/tel-icon.png" alt=""></span></span>
-                    400-900-8028
+                    <a href="">
+                        <span class="icon-tel">
+                            <img src="../../images/icon/tel-icon.png" alt="">
+                        </span>
+                        400-900-8028
+                    </a>
                 </h1>
 
                 <div class="contact-info">
