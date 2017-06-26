@@ -4,7 +4,6 @@
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    -webkit-justify- -moz-box;
     display: -ms-flexbox;
     -webkit-box-align: center;
     -moz-box-align: center; /*混合版本语法*/
@@ -55,4 +54,11 @@
 }
 .table-bordered td {
 	height: 0.4rem;
+}
+.tab-content .text-box h2 {
+	padding-left: 0.4rem;
+	background: url("../../images/icon/square.png") no-repeat left center;
+}
+.tab-pane h1 {
+	margin-bottom: 0.4rem;
 }
