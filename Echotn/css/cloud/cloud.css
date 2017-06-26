@@ -55,9 +55,13 @@
 .table-bordered td {
 	height: 0.4rem;
 }
-.tab-content .text-box h2 {
-	padding-left: 0.4rem;
-	background: url("../../images/icon/square.png") no-repeat left center;
+.tab-content .text-box h2:before {
+	display: inline-block;
+	content: "";
+	width: 0.32rem;
+	height: 0.32rem;
+	background: #35bd22;
+	margin-right: 0.2rem;
 }
 .tab-pane h1 {
 	margin-bottom: 0.4rem;
