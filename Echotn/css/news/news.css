@@ -82,40 +82,95 @@
 .pic-info .pic-text .pic-desc {
     font-size: .2667rem;
     color: #999;
-    line-height: .5rem;
+    line-height: .46rem;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
 }
+/*分类帅选*/
+.select-wrap .panel-head {
+    height: 100%;
+    background: none;
+    border-bottom: none;
+}
+.select-wrap .panel-collapse {
+    display: none;
+}
+.select-wrap .panel-head .panel-icon {
+    display: inline-block;
+    color: #ccc;
+    width: 0;
+    height: 0;
+    border-left: 0.18rem solid transparent;
+    border-right: 0.18rem solid transparent;
+    border-top: 0.2rem solid #8a8989;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+    margin-left: 0.2rem;
+}
 /*page*/
 .page {
     margin-top: 1.2rem;
 }
-.page .page-list {
-    text-align: center;
-}
-.page .page-list li {
+.page li {
     display: inline-block;
-    text-align: center;
-}
-.page .page-list li.pageMenu {
-    font-size: 0.3467rem;
-    color: #999;
-    width: 2.68rem;
-    letter-spacing: 6px;
-}
-.page .page-list li.prevPage, .page .page-list li.nextPage {
+    height: 0.7rem;
     color: #fff;
-    font-size: 0.32rem;
-    width: 2.16rem;
-    height: .72rem;
-    line-height: .72rem;
+    font-size: 0.3467rem;
+    line-height: 0.75rem;
+    text-align: center;
+    margin: 0 0.12rem;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+}
+#pageU {
+    display: inline-block;
+}
+.page .page-item {
+    display: inline-block;
+    width: 0.7rem;
+    background: rgba(53, 189, 34, 0.35);
+}
+.page .curPage {
     background: #35bd22;
-    -webkit-border-radius: 0.0533rem;
-    -moz-border-radius: 0.0533rem;
-    border-radius: 0.0533rem;
+}
+.page .prevPage, .page .nextPage {
+    width: 1.733rem;
+    background: #35bd22;
+}
+.page .prevPage:before {
+    display: inline-block;
+    content: "";
+    width:0;
+    height:0;
+    border-width: 0.14rem 0.14rem 0.14rem 0;
+    border-style: solid;
+    margin-right: 0.12rem;
+    border-color: transparent #fff transparent transparent;/*透明 灰 透明 透明 */
+}
+.page .nextPage:after {
+    display: inline-block;
+    content: "";
+    width:0;
+    height:0;
+    border-width: 0.14rem 0 0.14rem 0.14rem;
+    border-style: solid;
+    margin-left: 0.12rem;
+    border-color: transparent transparent transparent #fff;/*透明 灰 透明 透明 */
+}
+.page .prevPage.disbled, .page .nextPage.disbled {
+    background: rgba(53, 189, 34, 0.35);
 }
 /*news and about*/
 .tab-pane h1 {
@@ -138,6 +193,7 @@
     overflow: hidden;
 }
 .tab-content .text-box {
+    margin-top: 0.56rem;
     margin-bottom: .56rem;
 }
 .tab-content .text-box h2 {

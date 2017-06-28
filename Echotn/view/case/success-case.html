@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta content="telephone=no" name="format-detection" />
     <title>成功案例</title>
     <link rel="stylesheet" href="../../css/common.css">
     <link rel="stylesheet" href="../../css/news/news.css">
     <script src="../../js/flexible.debug.js"></script>
     <script src="../../libs/Jquery/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript" src="../../js/page.js"></script>
     <script src="../../js/common.js"></script>
 </head>
 <body>
@@ -51,8 +53,8 @@
                 <li class="menu-items has-children">
                     <a href="../About/about_us.html" class="menu-label">关于我们</a>
                     <div class="dropdown">
-                        <a href="">公司简介</a>
-                        <a href="">企业文化</a>
+                        <a href="../About/about_us.html">公司简介</a>
+                        <a href="../About/about_us.html">企业文化</a>
                     </div>
                 </li>
             </ul>
@@ -64,6 +66,29 @@
         <div class="container news-container">
             <div class="head-box top-head col">
                 <h1>成功案例</h1>
+                <div class="panel select-wrap">
+                    <div class="panel-head head-box">
+                        <h1>
+                            全部行业
+                        </h1>
+                        <div class="panel-icon"></div>
+                    </div>
+                    <div class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <ul class="product-panel panel-wrap">
+                                <li>全部行业</li>
+                                <li><a href="" title="">制造业</a></li>
+                                <li><a href="" title="">金融业</a></li>
+                                <li><a href="" title="">医疗业</a></li>
+                                <li><a href="" title="">教育业</a></li>
+                                <li><a href="" title="">科研</a></li>
+                                <li><a href="" title="">交通</a></li>
+                                <li><a href="" title="">政府</a></li>
+                                <li><a href="" title="">传媒</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="news-con content-wrap col">
                 <ul class="news-card">
@@ -181,13 +206,7 @@
                 </ul>
 
                 <!-- pages -->
-                <div id="page" class="page">
-                    <ul class="page-list">
-                        <li class="prevPage" id="prevPage">上一页</li>
-                        <li class="pageMenu">第<span class="" id="pageNum">1</span>页</li>
-                        <li class="nextPage" id="nextPage">下一页</li>
-                    </ul>
-                </div>
+                <div id="page" class="page"></div>
             </div>
         </div>
 
@@ -307,5 +326,10 @@
     <!-- mask -->
     <div class="mask" id="mask"></div>
 </div>
+<script type="text/javascript">
+    $(function () {
+        clipInit();
+    });
+</script>
 </body>
 </html>

@@ -1,50 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-.nav-tabs {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-}
-.nav-tabs li {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    -o-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -moz-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-box-flex: 1;
-    -moz-box-flex: 1;
-    -ms-box-flex: 1;
-    -o-box-flex: 1;
-    box-flex: 1;
-    -webkit-flex: 1;
-    -moz-flex: 1;
-    -ms-flex: 1;
-    -o-flex: 1;
-    -khtml-flex: 1;
-    flex: 1;
-    height: 1.0133rem;
-    color: #999;
-    font-size: 0.3733rem;
-    border-bottom: 1px solid #e6e6e6;
-}
-.nav-tabs li.is-active {
-    color: #333;
-    background: #fafafa;
-    border-bottom: 1px solid #35bd22;
-}
+
 /*news and about*/
 .tab-pane h1 {
     font-size: .56rem;
@@ -82,8 +39,4 @@
     font-size: 0.32rem;
     line-height: .64rem;
 }
-.tab-content .qualif-box img {
-    display: inline-block;
-    width: 31%;
-    margin-right: 1%;
-}
+
