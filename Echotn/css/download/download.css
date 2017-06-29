@@ -194,7 +194,7 @@
     background-size: 100%;
 
 }
-/*all this could be yours cold war kids*/
+/**/
 .select-box {
     position: relative;
     // font-size: 0.32rem;
@@ -270,10 +270,10 @@
     display: inline-block;
     content: "";
     width: 0.4533rem;
-    height: 0.4533rem;
+    height: 0.433rem;
     background: url("../../images/common/select_icon.png") no-repeat;
-    -webkit-background-size: 100%;
-    background-size: 100%;
+    -webkit-background-size: contain;
+            background-size: contain;
     vertical-align: text-top;
     margin-left: 0.1733rem;
 }
@@ -368,17 +368,19 @@
     position: relative;
     display: inline-block;
 }
-.radio-box {
+.checkbox-inline .radio-box {
     position: relative;
     display: inline-block;
     width: 0.48rem;
     height: 0.48rem;
-    margin-top: -0.12rem;
     margin-right: 0.1rem;
-    border: 1px solid #cfcfcf;
-    -webkit-border-radius: 50%;
-       -moz-border-radius: 50%;
-            border-radius: 50%;
+    background: url("../../images/icon/radio.png") no-repeat center center;
+    -webkit-background-size: contain;
+    background-size: contain;
+    // border: 1px solid #cfcfcf;
+    // -webkit-border-radius: 0.24rem;
+    //    -moz-border-radius: 0.24rem;
+    //         border-radius: 0.24rem;
     vertical-align: middle;
 }
 .radio-box input[type=checkbox] {
@@ -405,16 +407,13 @@
 }
 .radio-box input[type=checkbox]:checked + i {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 0.24rem;
-    height: 0.24rem;
-    margin-top: -0.12rem;
-    margin-left: -0.12rem;
-    -webkit-border-radius: 50%;
-       -moz-border-radius: 50%;
-            border-radius: 50%;
-    background: #39be26;
+    top: 0;
+    left: 0;
+    width: 0.48rem;
+    height: 0.48rem;
+    background: url("../../images/icon/radio-selected.png") no-repeat center center;
+    -webkit-background-size: contain;
+    background-size: contain;
 }
 .button-group {
     text-align: center;

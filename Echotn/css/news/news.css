@@ -137,6 +137,9 @@
 #pageU {
     display: inline-block;
 }
+.page {
+    text-align: center;
+}
 .page .page-item {
     display: inline-block;
     width: 0.7rem;

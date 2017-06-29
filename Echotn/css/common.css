@@ -110,9 +110,7 @@ em, i {
     text-indent: 0.44rem;
     border: 1px solid #ddd;
 }
-.cloud-con {
-    margin-top: 0.24rem;
-}
+
 /*垂直居中样式*/
 .flex {
     display: -webkit-box;    /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
@@ -500,6 +498,10 @@ em, i {
     vertical-align: top;
     margin-right: .32rem;
 }
+.icon-we,.icon-network {
+    width: 0.48rem;
+    margin-right: 0.2667rem;
+}
 /*联系*/
 .contact .contact-con {
     padding-bottom: .6rem;
@@ -577,6 +579,90 @@ em, i {
     width: 31%;
     margin-right: 1%;
 }
+/*云产品*/
+.cloud-con {
+    margin-top: 0.24rem;
+}
+.text-box .cloud-items {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    display: -ms-flexbox;
+    -webkit-justify-content: center;
+       -moz-justify-content: center;
+        -ms-justify-content: center;
+         -o-justify-content: center;
+            justify-content: center;
+    -webkit-box-align: center;
+       -moz-box-align: center; /*混合版本语法*/
+       -ms-flex-align: center; /*新版本语法*/
+    -webkit-align-items: center;
+            align-items: center;
+    position: relative;
+    margin-bottom: 0.64rem;
+}
+.text-box .cloud-items img {
+    display: block;
+    width: 1.2rem;
+    margin-right: 0.3333rem;
+}
+.text-box .cloud-items .info {
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    -o-flex: 1;
+    flex: 1;
+}
+.text-box .cloud-items .info span {
+    display: block;
+    color: #313131;
+    font-size: 0.3733rem;
+    font-weight: bold;
+    line-height: 0.56rem;
+}
+.text-box .cloud-items .info p {
+    color: #666;
+    font-size: 0.32rem;
+    line-height: 0.4rem;
+}
+.level {
+    clear: both;
+    overflow: hidden;
+}
+.level .cloud-items {
+    width: 33%;
+    float: left;
+}
+.level .cloud-items img {
+    margin-right: 0.1867rem;
+}
+.level .cloud-items span {
+    font-size: 0.32rem;
+}
+.text-box .table {
+    border-radius: 6px;
+}
+.text-box .table-bordered>thead>tr>th {
+    height: 0.64rem;
+    color: #fff;
+    background: #1c92d0;
+}
+.text-box .table-bordered td {
+    height: 0.4rem;
+}
+.text-box .tab-content .text-box h2:before {
+    display: inline-block;
+    content: "";
+    width: 0.32rem;
+    height: 0.32rem;
+    background: #35bd22;
+    margin-right: 0.2rem;
+}
+.text-box .tab-pane h1 {
+    margin-bottom: 0.4rem;
+}
 /*footer*/
 .footer {
     width: 100%;
@@ -597,5 +683,6 @@ em, i {
     -webkit-background-size: 100%;
     background-size: 100%;
     margin-right: 0.12rem;
-    vertical-align: sub;
+    margin-top: -0.05rem;
+    vertical-align: middle;
 }

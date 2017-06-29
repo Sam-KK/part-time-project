@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../css/news/news.css">
     <script src="../../js/flexible.debug.js"></script>
     <script src="../../libs/Jquery/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript" src="../../js/page.js"></script>
     <script src="../../js/common.js"></script>
 </head>
 <body>
@@ -145,13 +146,7 @@
                 </ul>
 
                 <!-- pages -->
-                <div id="page" class="page">
-                    <ul class="page-list">
-                        <li class="prevPage" id="prevPage">上一页</li>
-                        <li class="pageMenu">第<span class="" id="pageNum">1</span>页</li>
-                        <li class="nextPage" id="nextPage">下一页</li>
-                    </ul>
-                </div>
+                <div id="page" class="page"></div>
             </div>
         </div>
 
@@ -263,11 +258,16 @@
     <div class="footer flex" id="footer">
         <div class="copyright">
             <p>2010 - 1017 南京天顺迪诚科技有限公司版权所有</p>
-            <p>苏ICP备05037190号</p>
+            <p><i class="badgel"></i>苏ICP备05037190号</p>
         </div>
     </div>
     <!-- mask -->
     <div class="mask" id="mask"></div>
 </div>
 </body>
+<script type="text/javascript">
+    $(function () {
+        clipInit();
+    });
+</script>
 </html>
