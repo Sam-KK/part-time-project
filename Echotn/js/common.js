@@ -111,4 +111,14 @@ $(function() {
             }
         }
     }();
+
+    // success-case
+    !function () {
+        if ($("body").hasClass("success-case")) {
+            $(".event-sectors").click(function () {
+                $(this).children(".panel-icon").toggleClass("is-active");
+                $(this).siblings(".panel-collapse").slideToggle();
+            });
+        }
+    }();
 });

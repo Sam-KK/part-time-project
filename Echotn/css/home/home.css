@@ -1,6 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
 /* 轮播 */
+.swiper-container-horizontal>.swiper-pagination-bullets {
+	bottom: 0.2rem;
+}
 #slider .swiper-pagination .swiper-pagination-bullet {
 	width: 0.48rem;
 	height: 0.08rem;

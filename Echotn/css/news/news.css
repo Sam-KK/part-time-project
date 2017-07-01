@@ -90,13 +90,13 @@
     -webkit-box-orient: vertical;
 }
 /*分类帅选*/
+.select-wrap {
+    position: relative;
+}
 .select-wrap .panel-head {
-    height: 100%;
+    height: 1.1733rem;
     background: none;
     border-bottom: none;
-}
-.select-wrap .panel-collapse {
-    display: none;
 }
 .select-wrap .panel-head .panel-icon {
     display: inline-block;
@@ -115,6 +115,29 @@
     -o-transition: all .2s;
     transition: all .2s;
     margin-left: 0.2rem;
+}
+.select-wrap .panel-head .panel-icon.is-active {
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+.select-wrap .panel-collapse {
+    position: absolute;
+    right: 0;
+    display: none;
+    width: 3.6rem;
+    padding: 0.24rem 0;
+    background: #fff;
+    border: 1px solid #ebebeb;
+}
+.all-text,.select-wrap .panel-collapse a {
+    display: block;
+    color: #4c4c4c;
+    font-size: 0.3733rem;
+    line-height: 0.9rem;
+    padding: 0 0.4rem;
 }
 /*page*/
 .page {
