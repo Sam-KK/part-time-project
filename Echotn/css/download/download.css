@@ -78,9 +78,9 @@
     -khtml-align-items: center;
     align-items: center;
     border: 1px solid #d6d6d6;
-    -webkit-border-radius: 0 0 4px 4px;
-    -moz-border-radius: 0 0 4px 4px;
-    border-radius: 0 0 4px 4px;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
 }
 .order-img {
     height: auto;

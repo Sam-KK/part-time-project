@@ -66,8 +66,10 @@ $(function() {
                 if ($(this).next(".panel-collapse").is(":hidden")) {
                     // 如果是隐藏
                     if (!$(this).next(".panel-collapse").is(":animated")) {
-                        $(this).children(".panel-icon").addClass("collapse-toggle").parents(".panel").siblings().find('.panel-icon').removeClass('collapse-toggle');
-                        $(this).next('.panel-collapse').stop().slideDown().parents(".panel").siblings().find('.panel-collapse').stop().slideUp();
+                        $(this).children(".panel-icon").addClass("collapse-toggle");
+                        //.parents(".panel").siblings().find('.panel-icon').removeClass('collapse-toggle');
+                        $(this).next('.panel-collapse').stop().slideDown();
+                        // .parents(".panel").siblings().find('.panel-collapse').stop().slideUp();
                     }
                 } else {
                     //  显示
