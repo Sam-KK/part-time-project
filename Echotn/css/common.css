@@ -575,10 +575,14 @@ em, i {
     background: #fafafa;
     border-bottom: 1px solid #35bd22;
 }
-.tab-content .qualif-box img {
+.tab-content .qualif-box a {
     display: inline-block;
     width: 31%;
     margin-right: 1%;
+}
+.tab-content .qualif-box a img {
+    display: block;
+    width: 100%;
 }
 /*云产品*/
 .cloud-con {
