@@ -410,11 +410,23 @@ em, i {
     border-bottom: 1px solid #e6e6e6;
 }
 .head-box h1 {
+    position: relative;
     color: #333;
     font-size: 0.4267rem;
     padding-top: 0.018rem;
     font-family: PingFang Medium;
     font-weight: bold;
+}
+.relative {
+    position: relative;
+    padding-left: 0.7rem;
+}
+.relative span.icon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform:translate3d(0,-50%,0);
+    -webkit-transform:translate3d(0,-50%,0);
 }
 .top-head {
     height: 1.1733rem;
@@ -458,6 +470,17 @@ em, i {
     display: -ms-box;
     display: -o-box;
     display: box;
+}
+.ico {
+    position: relative;
+    width: 0.7467rem;
+}
+.ico span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform:translate3d(0,-50%,0);
+    -webkit-transform:translate3d(0,-50%,0);
 }
 .enter-title {
     color: #333;
