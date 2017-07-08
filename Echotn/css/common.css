@@ -496,7 +496,7 @@ em, i {
 .icon {
     width: 0.4267rem;
     display: inline-block;
-    vertical-align: bottom;
+    vertical-align: initial;
     margin-right: .32rem;
 }
 .icon-we,.icon-network {
