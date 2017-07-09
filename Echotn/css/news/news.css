@@ -231,6 +231,11 @@
     margin-bottom: 0.48rem;
     font-weight: bold;
 }
+.tab-content .text-box h2 .block {
+    display: inline-block;
+    width: 0.32rem;
+    margin-right: 0.2rem;
+}
 .tab-content .text-box h3 {
     color: #333;
     font-size: .3733rem;
