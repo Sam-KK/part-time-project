@@ -68,82 +68,7 @@
                 <h1>新闻资讯</h1>
             </div>
             <div class="news-con content-wrap col">
-                <ul class="news-card">
-                    <li class="news-card-items">
-                        <a href="news-sd.html" class="pic-box">
-                            <img src=".././../images/news/news_list_01.png" alt="">
-                        </a>
-                        <div class="pic-info col">
-                            <div class="pic-top">
-                                <a href="news-sd.html">山东某银行ECHOTN易通第三年扩容计划实施</a>
-                                <div class="timer">2016-10-10 11:16:00</div>
-                            </div>
-                            <div class="pic-text">
-                                <p class="pic-desc">该行是一家总部位于山东省潍坊市的区域性股份制商业银行，也是山东半岛地区成立的第四家城市商业银行，下辖13家区域客服中心、8家金融事业部，在潍坊区域设立52家支行，在青岛地区成立一家异地分...</p>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="news-card-items">
-                        <a href="news-nj-medicine.html" class="pic-box">
-                            <img src=".././../images/news/news_list_02.png" alt="">
-                        </a>
-                        <div class="pic-info col">
-                            <div class="pic-top">
-                                <a href="news-nj-medicine.html">ECHOTN易通在南京医药恢复演练系统中顺利启用oracle rac数据</a>
-                                <div class="timer">2016-10-11 06:02:00</div>
-                            </div>
-                            <div class="pic-text">
-                                <p class="pic-desc">2016年3月30日，ECHOTN技术团队到南京医药股份有限公司实施了恢复演练测试，模拟信息中心机房在故障的情况下，ECHOTN易通如何实现应急业务快速恢复，正常运转。经过交流分析搭建环境...</p>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="news-card-items">
-                        <a href="news-cloud-services.html" class="pic-box">
-                            <img src=".././../images/news/news_list_03.png" alt="">
-                        </a>
-                        <div class="pic-info col">
-                            <div class="pic-top">
-                                <a href="news-cloud-services.html">ECHOTN云服务产品推广招待会成功举办</a>
-                                <div class="timer">2012-01-17 11:17:53</div>
-                            </div>
-                            <div class="pic-text">
-                                <p class="pic-desc">2015年12月26日，ECHOTN云服务产品推广招待会在南京汤山颐尚温泉酒店顺利举办。多用途云服务产品易通ＥＣＨＯＴＮ主要用于IT部门系统管理和向业务部门用户提供运维服务。能够根据用户的不...</p>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="news-card-items">
-                        <a href="news-visit.html" class="pic-box">
-                            <img src=".././../images/news/news_list_04.png" alt="">
-                        </a>
-                        <div class="pic-info col">
-                            <div class="pic-top">
-                                <a href="news-visit.html">探访易通产品3C认证过程</a>
-                                <div class="timer">2012-01-17 11:17:26</div>
-                            </div>
-                            <div class="pic-text">
-                                <p class="pic-desc">电磁兼容检测中心需要经过EMC权威机构审定和质量体系认证，而且具有法定测试资格的综合性设计与测试检测中心才能依据电磁兼容标准做相关测试，并出具权威的检测报告。</p>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="news-card-items">
-                        <a href="news-niche-market.html" class="pic-box">
-                            <img src=".././../images/news/news_list_05.png" alt="">
-                        </a>
-                        <div class="pic-info col">
-                            <div class="pic-top">
-                                <a href="news-niche-market.html">天顺迪诚：小众市场里的拓荒者</a>
-                                <div class="timer">2012-01-17 11:16:40</div>
-                            </div>
-                            <div class="pic-text">
-                                <p class="pic-desc">王旭晖，最初看到这个人高马大的兄弟，你很难联想到他属老鼠。看似温和迟缓的他骨子里却是一股子敏捷果敢。学英文的他出了校门就在外贸公司做单证，因为嫌烦就自学计算机技术打算偷懒，想不到正...</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+                <ul class="news-card" id="news-card"></ul>
 
                 <!-- pages -->
                 <div id="page" class="page"></div>
@@ -227,7 +152,7 @@
         <!-- 联系我们 -->
         <div class="contact">
             <div class="head-box col">
-                <h1>
+                <h1 class="relative">
                     <a href="../contact/contact-us.html">
                         <span class="icon icon-location">
                             <img src="../../images/icon/contact-icon.png" alt="">
@@ -267,9 +192,55 @@
     <div class="mask" id="mask"></div>
 </div>
 <script type="text/javascript">
-    $(function () {
-        clipInit();
-    });
+    var datas = [{
+        href: "news-sd.html",
+        imgsrc: ".././../images/news/news_list_01.png",
+        name: "山东某银行ECHOTN易通第三年扩容计划实施",
+        time: "2016-10-10 11:16:00",
+        desc: "该行是一家总部位于山东省潍坊市的区域性股份制商业银行，也是山东半岛地区成立的第四家城市商业银行，下辖13家区域客服中心、8家金融事业部，在潍坊区域设立52家支行，在青岛地区成立一家异地分..."
+    }, {
+        href: "news-nj-medicine.html",
+        imgsrc: ".././../images/news/news_list_02.png",
+        corner: "制造业",
+        name: "ECHOTN易通在南京医药恢复演练系统中顺利启用oracle rac数据",
+        time: "2016-10-10 11:16:00",
+        desc: "2016年3月30日，ECHOTN技术团队到南京医药股份有限公司实施了恢复演练测试，模拟信息中心机房在故障的情况下，ECHOTN易通如何实现应急业务快速恢复，正常运转。经过交流分析搭建环境..."
+    }, {
+        href: "news-cloud-services.html",
+        imgsrc: ".././../images/news/news_list_03.png",
+        corner: "金融业",
+        name: "ECHOTN云服务产品推广招待会成功举办",
+        time: "2016-10-10 11:16:00",
+        desc: "2015年12月26日，ECHOTN云服务产品推广招待会在南京汤山颐尚温泉酒店顺利举办。多用途云服务产品易通ＥＣＨＯＴＮ主要用于IT部门系统管理和向业务部门用户提供运维服务。能够根据用户的不..."
+    }, {
+        href: "news-visit.html",
+        imgsrc: ".././../images/news/news_list_04.png",
+        corner: "制造业",
+        name: "探访易通产品3C认证过程",
+        time: "2016-10-10 11:16:00",
+        desc: "电磁兼容检测中心需要经过EMC权威机构审定和质量体系认证，而且具有法定测试资格的综合性设计与测试检测中心才能依据电磁兼容标准做相关测试，并出具权威的检测报告。"
+    }, {
+        href: "news-niche-market.html",
+        imgsrc: ".././../images/news/news_list_05.png",
+        corner: "医疗业",
+        name: "天顺迪诚：小众市场里的拓荒者",
+        time: "2016-10-10 11:16:00",
+        desc: "王旭晖，最初看到这个人高马大的兄弟，你很难联想到他属老鼠。看似温和迟缓的他骨子里却是一股子敏捷果敢。学英文的他出了校门就在外贸公司做单证，因为嫌烦就自学计算机技术打算偷懒，想不到正..."
+    }];
+    var options = {
+        "id": "page", //显示页码的元素
+        "data": datas, //显示数据
+        "maxshowpageitem": 3, //最多显示的页码个数
+        "pagelistcount": 5, //每页显示数据个数
+        "callBack": function(result) {
+            var cHtml = "";
+            for (var i = 0; i < result.length; i++) {
+                cHtml += '<li class="news-card-items"><a href="' + result[i].href + '" class="pic-box"><img src="' + result[i].imgsrc + '"></a><div class="pic-info col"><div class="pic-top"><a href="' + result[i].href + '">' + result[i].name + '</a><div class="timer">' + result[i].time + '</div></div><div class="pic-text"><a href="' + result[i].href + '" class="pic-desc">' + result[i].desc + '</a></div></div></li>'; //处理数据
+            }
+            $("#news-card").html(cHtml); //将数据增加到页面中
+        }
+    };
+    page.init(datas.length, 1, options);
 </script>
 </body>
 </html>

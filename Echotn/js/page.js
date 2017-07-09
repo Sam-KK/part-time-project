@@ -1,110 +1,123 @@
-// JavaScript Document
-/*****************数据改变  ul 不变*************/
-//根据数据写入 li
-clipInit = function() {
-    pageCon = 10; //可更改
-    liTab = 5; //可更改
-    medCur = Math.ceil(liTab / 2);
-    var str = "";
-    str += "<ul>";
-    str += "<li class='disbled' id='prevPage' onclick='LastPage()'>上一页</li>";
-    str += "<div id='pageU' class='fl'>";
-    if (liTab <= pageCon) {
-      for (var i = 1; i <= liTab; i++) {
-        str += "<li id='clip" + i + "' onclick='pageInt(&#039;clip" + i + "&#039;,&#039;" + liTab + "&#039;,&#039;" + medCur + "&#039;)'>" + i + "</li>";
-      }
-    } else {
-      for (var i = 1; i <= pageCon; i++) {
-        str += "<li id='clip" + i + "' onclick='pageInt(&#039;clip" + i + "&#039;,&#039;" + pageCon + "&#039;,&#039;" + medCur + "&#039;)'>" + i + "</li>";
-      }
-    }
-    str += "</div>";
-    str += "<li class='page-item' id='nextPage' onclick='NextPage()'>下一页</li>";
-    str += "</ul>";
-    $("#page").html(str);
-    pageInt('clip1', pageCon, medCur);
-  }
-  //设置当点击的值小于预设固定值
-  //单击事件  选择页数
-clipPage = function(cur, page) {
-    var str = "";
-    for (var i = 1; i <= page; i++) {
-      var liId = "clip" + i;
-      if (cur == i) {
-        $("#" + liId).attr("class", "page-item curPage");
-      } else {
-        $("#" + liId).attr("class", "page-item");
-      }
-      $("#" + liId).text(i);
-    }
-    pageControl(cur);
-  }
-  //设置的中转站，根据获取的值更改操作
-pageInt = function(obj, page, medCur) {
-    var value = parseInt($("#" + obj).text());
-    if (value < medCur) {
-      clipPage(value, page);
-    } else if (value >= medCur) {
-      clipPageMax(value, page, medCur);
-    }
-  }
-  //设置当获取的值大于预设固定值
-clipPageMax = function(cur, page, medCur) {
-    var str = "";
-    var startNum = cur - medCur + 1;
-    var maxPage = startNum + parseInt(page) - 1;
-    if (maxPage < pageCon) {
-      for (var i = 1; i <= page; i++) {
-        var liId = "clip" + i;
-        if (medCur == i) {
-          $("#" + liId).attr("class", "page-item curPage");
-        } else {
-          $("#" + liId).attr("class", "page-item");
+/**
+ * Created by zzg on 2017/4/26.
+ */
+
+var page = {
+    "pageId": "",
+    "data": null,
+    "maxshowpageitem": 5,//最多显示的页码个数
+    "pagelistcount": 10,//每一页显示的内容条数
+    "init": function (listCount, currentPage, options) {
+        this.data = options.data,
+            this.pageId = options.id,
+            this.maxshowpageitem = options.maxshowpageitem,//最多显示的页码个数
+            this.pagelistcount = options.pagelistcount//每一页显示的内容条数
+        page.initPage(listCount, currentPage);
+    },
+    /**
+     * 初始化数据处理
+     * @param listCount 列表总量
+     * @param currentPage 当前页
+     */
+    "initPage": function (listCount, currentPage) {
+        var maxshowpageitem = page.maxshowpageitem;
+        if (maxshowpageitem != null && maxshowpageitem > 0 && maxshowpageitem != "") {
+            page.maxshowpageitem = maxshowpageitem;
         }
-        $("#clip" + i).text(startNum);
-        startNum++;
-      }
-    } else {
-      var end = new RegExp(/\d+$/);
-      var page = parseInt(end.exec(page));
-      var curT = cur - pageCon + page;
-      var maxP = pageCon;
-      for (var i = page; i >= 1; i--) {
-        var liId = "clip" + i;
-        if (curT == i) {
-          $("#" + liId).attr("class", "page-item curPage");
-        } else {
-          $("#" + liId).attr("class", "page-item");
+        var pagelistcount = page.pagelistcount;
+        if (pagelistcount != null && pagelistcount > 0 && pagelistcount != "") {
+            page.pagelistcount = pagelistcount;
         }
-        $("#" + liId).text(maxP);
-        maxP--;
-      }
+        page.pagelistcount = pagelistcount;
+        if (listCount < 0) {
+            listCount = 0;
+        }
+        if (currentPage <= 0) {
+            currentPage = 1;
+        }
+
+        page.setPageListCount(listCount, currentPage);
+    },
+    /**
+     * 初始化分页界面
+     * @param listCount 列表总量
+     */
+    "initWithUl": function (listCount, currentPage) {
+        var pageCount = 1;
+        if (listCount >= 0) {
+            var pageCount = listCount % page.pagelistcount > 0 ? parseInt(listCount / page.pagelistcount) + 1 : parseInt(listCount / page.pagelistcount);
+        }
+        var appendStr = page.getPageListModel(pageCount, currentPage);
+        $("#" + page.pageId).html(appendStr);
+    },
+    /**
+     * 设置列表总量和当前页码
+     * @param listCount 列表总量
+     * @param currentPage 当前页码
+     */
+    "setPageListCount": function (listCount, currentPage) {
+        listCount = parseInt(listCount);
+        currentPage = parseInt(currentPage);
+        page.initWithUl(listCount, currentPage);
+        page.initPageEvent(listCount);
+        page.viewPage(currentPage, listCount, page.pagelistcount, page.data)
+//      fun(currentPage);
+    },
+    //页面显示功能
+    "viewPage": function (currentPage, listCount, pagelistcount, data) {
+        var NUM = listCount % pagelistcount == 0 ? listCount / pagelistcount : parseInt(listCount / pagelistcount) + 1;
+        if (currentPage == NUM) {
+            var result = data.slice((currentPage - 1) * pagelistcount, data.length);
+        }
+        else {
+            var result = data.slice((currentPage - 1) * pagelistcount, (currentPage - 1) * pagelistcount + pagelistcount);
+        }
+        options.callBack(result);
+    },
+    "initPageEvent": function (listCount) {
+        $("#" + page.pageId + ">li[class='pageItem']").on("click", function () {
+            page.setPageListCount(listCount, $(this).attr("page-data"), page.fun);
+        });
+    },
+    "getPageListModel": function (pageCount, currentPage) {
+        var prePage = currentPage - 1;
+        var nextPage = currentPage + 1;
+        var prePageClass = "pageItem";
+        var nextPageClass = "pageItem";
+        if (prePage <= 0) {
+            prePageClass = "pageItemDisable";
+        }
+        if (nextPage > pageCount) {
+            nextPageClass = "pageItemDisable";
+        }
+        var appendStr = "";
+        //appendStr+="<li class='"+prePageClass+"' page-data='1' page-rel='firstpage'>首页</li>";
+        appendStr += "<li class='" + prePageClass + "' page-data='" + prePage + "' page-rel='prepage'>上一页</li>";
+        var miniPageNumber = 1;
+        if (currentPage - parseInt(page.maxshowpageitem / 2) > 0 && currentPage + parseInt(page.maxshowpageitem / 2) <= pageCount) {
+            miniPageNumber = currentPage - parseInt(page.maxshowpageitem / 2);
+        } else if (currentPage - parseInt(page.maxshowpageitem / 2) > 0 && currentPage + parseInt(page.maxshowpageitem / 2) > pageCount) {
+            miniPageNumber = pageCount - page.maxshowpageitem + 1;
+            if (miniPageNumber <= 0) {
+                miniPageNumber = 1;
+            }
+        }
+        var showPageNum = parseInt(page.maxshowpageitem);
+        if (pageCount < showPageNum) {
+            showPageNum = pageCount;
+        }
+        for (var i = 0; i < showPageNum; i++) {
+            var pageNumber = miniPageNumber++;
+            var itemPageClass = "pageItem";
+            if (pageNumber == currentPage) {
+                itemPageClass = "pageItemActive";
+            }
+
+            appendStr += "<li class='" + itemPageClass + "' page-data='" + pageNumber + "' page-rel='itempage'>" + pageNumber + "</li>";
+        }
+        appendStr += "<li class='" + nextPageClass + "' page-data='" + nextPage + "' page-rel='nextpage'>下一页</li>";
+        //appendStr+="<li class='"+nextPageClass+"' page-data='"+pageCount+"' page-rel='lastpage'>尾页</li>";
+        return appendStr;
 
     }
-    pageControl(cur);
-  }
-  //首页，尾页，上一页，下一页 的样式
-pageControl = function(cur) {
-    if (cur == 1) {
-      $("#prevPage").attr("class", "prevPage disbled");
-      $("#nextPage").attr("class", "page-item nextPage");
-    } else if (cur == pageCon) {
-     $("#prevPage").attr("class", "page-item prevPage");
-      $("#nextPage").attr("class", "disbled nextPage");
-    } else {
-      $("#prevPage").attr("class", "page-item prevPage");
-      $("#nextPage").attr("class", " page-item nextPage");
-    }
-  }
-  //上一页 显示
-LastPage = function() {
-    var choice = $(".curPage").attr('id');
-    var obj = $("#" + choice).prev().attr('id');
-    pageInt(obj, liTab, medCur);
-  }
-  //下一页 显示
-NextPage = function() {
-  var choice = $(".curPage").attr('id');
-  var obj = $("#" + choice).next().attr('id');
-  pageInt(obj, liTab, medCur);
 }
