@@ -407,6 +407,7 @@ em, i {
     align-items: center;
     height: 1.08rem;
     background: #fff;
+    border-top: 1px solid transparent;
     border-bottom: 1px solid #e6e6e6;
 }
 .head-box h1 {
@@ -517,15 +518,15 @@ em, i {
     transition: 100ms ease-in .1s;
 }
 .icon {
-    width: 0.4267rem;
+    width: 0.56rem;
     display: inline-block;
     // vertical-align: middle;
     // margin-right: .32rem;
 }
-.icon-we,.icon-network {
-    width: 0.48rem;
-    margin-right: 0.2667rem;
-}
+// .icon-we,.icon-network {
+//     width: 0.48rem;
+//     margin-right: 0.2667rem;
+// }
 /*联系*/
 .contact .contact-con {
     padding-bottom: .6rem;
@@ -534,6 +535,7 @@ em, i {
     color: #35bd22;
     font-size: 0.9067rem;
     padding: 0.94rem 0;
+    font-weight: bold;
 }
 .contact .contact-con h1 .icon-tel {
     display: inline-block;
@@ -542,8 +544,8 @@ em, i {
 }
 .contact-info p {
     color: #333;
-    font-size: 0.3733rem;
-    line-height: 0.64rem;
+    font-size: 0.4rem;
+    line-height: 0.6933rem;
 }
 .contact-info figure {
     width: 4.32rem;
