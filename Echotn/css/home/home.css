@@ -1,6 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
 /* 轮播 */
+.swiper-container-horizontal>.swiper-pagination-bullets {
+	bottom: 0.2rem;
+}
 #slider .swiper-pagination .swiper-pagination-bullet {
 	width: 0.48rem;
 	height: 0.08rem;
@@ -97,8 +100,14 @@
 .hes_bt1_bt h2 a {
 	display: inline-block;
 	color: #000;
-	font-size: 0.3467rem;
+	font-size: 0.3733rem;
+	line-height: 1.2;
 	margin-bottom: .28rem;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
 .hes_bt1_bt p {
 	color: #666;
@@ -122,7 +131,7 @@
 	width: 0.4rem;
 	height: 0.4rem;
 	margin-left: 0.1rem;
-	margin-top: -0.105rem;
+	// margin-top: -0.105rem;
 	background: url("../../images/icon/fill-right.png") no-repeat center center;
 	-webkit-background-size: 100%;
 	background-size: 100%;
@@ -238,6 +247,9 @@
 	height: .8rem;
 	width: 100%;
 }
+.new-list li:active {
+	background: #e5e5e5;
+}
 .new-list li .circle {
 	display: inline-block;
 	width: 0.1867rem;
@@ -267,6 +279,10 @@
 .about-us {
 	background: #fff;
 	margin-top: .24rem;
+}
+.about-us .head-box {
+	border-top: none;
+	border-bottom: none;
 }
 .about-con .about-text {
 	color: #666;

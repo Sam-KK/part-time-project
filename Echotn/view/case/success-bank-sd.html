@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta content="telephone=no" name="format-detection" />
     <title>山东某银行</title>
     <link rel="stylesheet" href="../../css/common.css">
     <link rel="stylesheet" href="../../css/news/news.css">
@@ -51,8 +52,8 @@
                 <li class="menu-items has-children">
                     <a href="../About/about_us.html" class="menu-label">关于我们</a>
                     <div class="dropdown">
-                        <a href="">公司简介</a>
-                        <a href="">企业文化</a>
+                        <a href="../About/about_us.html">公司简介</a>
+                        <a href="../About/about_us.html">企业文化</a>
                     </div>
                 </li>
             </ul>
@@ -121,7 +122,9 @@
                             <p>用户之前采用的传统备份方式，一旦发生磁盘故障、数据库崩溃等意外，就会导致至少4小时的业务停机和多达24小时的数据丢失。而先进的时间点快照技术，可以在生产磁盘故障时进行恢复，几分钟内恢复系统正常运行。恢复丢失或损坏的数据也可以通过提取历史快照瞬间完成，而无需经历冗长的磁带或磁盘回存过程。</p>
                         </div>
                         <div class="text-box">
-                            <img src="../../images/case/case_08.png" alt="">
+                            <a href="" title="">
+                                <img src="../../images/case/case_08.png" alt="">
+                            </a>
                         </div>
                         <div class="text-box">
                             <h4>远程容灾服务</h4>
@@ -130,7 +133,9 @@
                             <p>提供周期复制（Periodic Replication）和连续复制（Continuous Replication）模式。周期复制是结合快照技术的策略复制模式，依照使用者预设的策略启动复制作业，在本地端的ECHOTN®易通启动快照的同时，灾备端的数据智能保护方案也会产生一份快照，作为备份的副本磁盘，这些灾备端的快照副本同样可读可写，系统管理员可在灾备端运用快照副本，执行演练、测试、开发等作业。连续复制是数据智能保护方案提供的远程异步复制（Asynchronous Replication）。在此模式下，所有变化数据皆会实时被传送至远端站点的ECHOTN®易通设备上，RPO比周期复制模式小，即灾难发生后的数据丢失量较少。数据智能保护方案的远程复制使用了扇区扫描技术，仅需要传输发生改变的扇区而不是整个数据块，当网络带宽有限时，可将需要远程复制的数据量降到最少。内置的数据压缩功能进一步减少对带宽的要求，将广域网或互联网带宽容量的消耗减到最少，充分利用现有的带宽配置。数据智能保护方案的远程复制技术整合了带宽优化、加密、压缩等功能，可实现最好的性价比、最高的资源利用率以及最安全的数据传输。</p>
                         </div>
                         <div class="text-box">
-                            <img src="../../images/case/case_14.png" alt="">
+                            <a href="" title="">
+                                <img src="../../images/case/case_14.png" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -214,7 +219,7 @@
         <!-- 联系我们 -->
         <div class="contact">
             <div class="head-box col">
-                <h1>
+                <h1 class="relative">
                     <a href="../contact/contact-us.html">
                         <span class="icon icon-location">
                             <img src="../../images/icon/contact-icon.png" alt="">
@@ -225,12 +230,10 @@
 
             <div class="contact-con col">
                 <h1 class="">
-                    <a href="">
-                        <span class="icon-tel">
-                            <img src="../../images/icon/tel-icon.png" alt="">
-                        </span>
-                        400-900-8028
-                    </a>
+                    <span class="icon-tel">
+                        <img src="../../images/icon/tel-icon.png" alt="">
+                    </span>
+                    400-900-8028
                 </h1>
 
                 <div class="contact-info">
@@ -239,7 +242,9 @@
                     <p>研发中心：北京市海淀区信息路甲28号</p>
 
                     <figure>
-                        <img src="../../images/common/bigma.png" alt="">
+                        <a href="" title="">
+                            <img src="../../images/common/bigma.png" alt="">
+                        </a>
                         <p>微信平台：数据狮</p>
                     </figure>
                 </div>
@@ -250,8 +255,8 @@
     <!-- footer -->
     <div class="footer flex" id="footer">
         <div class="copyright">
-            <p>2010 - 1017 南京天顺迪诚科技有限公司版权所有</p>
-            <p>苏ICP备05037190号</p>
+            <p>2010 - 2017 南京天顺迪诚科技有限公司版权所有</p>
+            <p><i class="badgel"></i>苏ICP备05037190号</p>
         </div>
     </div>
 
