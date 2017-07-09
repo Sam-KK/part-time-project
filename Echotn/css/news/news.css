@@ -150,7 +150,7 @@
     text-align: center;
     margin-top: 1.2rem;
 }
-.page>li{
+.page>li,.page>li a{
     display: inline-block;
     height: 0.7rem;
     color: #fff;
