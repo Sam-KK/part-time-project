@@ -220,49 +220,49 @@
     // $(function() {
         var datas = [{
             href: "success-Jiangsu-Shepherd.html",
-            src: ".././../images/case/js.png",
+            imgsrc: ".././../images/case/js.png",
             corner: "制造业",
             name: "江苏牧羊集团有限公司",
             time: "2016-10-10 11:16:00",
             desc: "江苏牧羊有限公司，是国家最早定点生产粮食饲料机械的企业..."
         }, {
             href: "success-nj-mechanics.html",
-            src: ".././../images/case/njq.png",
+            imgsrc: ".././../images/case/njq.png",
             corner: "制造业",
             name: "南京轻机包装机械有限公司",
             time: "2016-10-10 11:16:00",
             desc: "南京轻机包装机械有限公司是一个具有产品开发、科研设计、生产制造..."
         }, {
             href: "success-pubank.html",
-            src: ".././../images/case/pufa.png",
+            imgsrc: ".././../images/case/pufa.png",
             corner: "金融业",
             name: "上海浦东发展银行江阴支行",
             time: "2016-10-10 11:16:00",
             desc: "上海浦东发展银行股份有限公司（一下简称：浦发银行）是1992年8月12日经..."
         }, {
             href: "success-siemens.html",
-            src: ".././../images/case/x.png",
+            imgsrc: ".././../images/case/x.png",
             corner: "制造业",
             name: "西门子电站自动化有限公司",
             time: "2016-10-10 11:16:00",
             desc: "西门子电站自动化有限公司（SPPA）成立于1993年，是西门子..."
         }, {
             href: "success-nj-medicine.html",
-            src: ".././../images/case/nj.png",
+            imgsrc: ".././../images/case/nj.png",
             corner: "医疗业",
             name: "南京医药股份有限公司",
             time: "2016-10-10 11:16:00",
             desc: "南京医药股份有限公司成立于1951年，于1996年在上海证交所上市..."
         }, {
             href: "success-Zhongshan-University.html",
-            src: ".././../images/case/gd.png",
+            imgsrc: ".././../images/case/gd.png",
             corner: "教育业",
             name: "广东顺德中山大学卡内...",
             time: "2016-10-10 11:16:00",
             desc: "广东顺德中山大学-卡内基梅隆大学国际联合研究院（以下简称..."
         }, {
             href: "success-bank-sd.html",
-            src: ".././../images/case/sdbank.png",
+            imgsrc: ".././../images/case/sdbank.png",
             corner: "金融业",
             name: "山东某银行",
             time: "2016-10-10 11:16:00",
@@ -276,7 +276,7 @@
             "callBack": function(result) {
                 var cHtml = "";
                 for (var i = 0; i < result.length; i++) {
-                    cHtml += '<li class="news-card-items"><a href="'+result[i].href+'" class="pic-box"><img src="'+result[i].src+'"><span class="corner">'+result[i].corner+'</span></a><div class="pic-info col"><div class="pic-top"><a href="'+result[i].href+'">'+result[i].name+'</a><div class="timer">'+result[i].time+'</div></div><div class="pic-text"><a href="'+result[i].href+'" class="pic-desc">'+result[i].desc+'</a></div></div></li>'; //处理数据
+                    cHtml += '<li class="news-card-items"><a href="'+result[i].href+'" class="pic-box"><img src="'+result[i].imgsrc+'"><span class="corner">'+result[i].corner+'</span></a><div class="pic-info col"><div class="pic-top"><a href="'+result[i].href+'">'+result[i].name+'</a><div class="timer">'+result[i].time+'</div></div><div class="pic-text"><a href="'+result[i].href+'" class="pic-desc">'+result[i].desc+'</a></div></div></li>'; //处理数据
                 }
                 $("#news-card").html(cHtml); //将数据增加到页面中
             }
