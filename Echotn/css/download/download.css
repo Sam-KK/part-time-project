@@ -328,9 +328,6 @@
      -khtml-outline: none;
             outline: none;
 }
-.form-group.has-error .form-control {
-    border: 1px solid #ff5959;
-}
 .form-group textarea {
     display: block;
     color: #999;
@@ -424,14 +421,11 @@
 }
 .button-group .next-step {
     display: inline-block;
-    color: #fff;
+    color: #39be26;
     font-size: 0.3733rem;
     width: 4rem;
     height: 0.94rem;
     line-height: 0.96rem;
     text-align: center;
-    background: #39be26;
-}
-.button-group .next-step.is-disable {
-    background: #999;
+    border: 1px solid #39be26;
 }

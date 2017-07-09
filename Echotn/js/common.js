@@ -1,5 +1,4 @@
 $(function() {
-    //$(".evevt-nxnt").addClass("is-disable");
     // 面包屑导航
     $(".event-menu-toogle").on("click", function() {
         $(".sidebar-menu,.mask").toggleClass("menu-open");
@@ -107,27 +106,11 @@ $(function() {
                 checkInputs[i].onclick = function() {
                     if (this.checked == true) {
                         $(this).siblings(".select-text").html("已选");
-                        //$(".evevt-nxnt").removeClass("is-disable");
                     }else {
                         $(this).siblings(".select-text").html("选择");
-                        //$(".evevt-nxnt").addClass("is-disable");
                     }
                 }
             }
-
-            // 第二步
-            // $(".checkbox-select input[type='checkbox']").click(function function_name(argument) {
-            //     // body...
-            // });
-
-            // 下一步
-            // $(".evevt-nxnt").click(function (event) {
-            //     if ($(this).hasClass("is-disable")) {
-            //         return false;
-            //     }else {
-            //         return true;
-            //     }
-            // });
         }
     }();
 
