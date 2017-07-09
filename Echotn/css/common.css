@@ -3,14 +3,6 @@
 html {
     -webkit-tap-highlight-color: transparent;
 }
-@font-face {
-    font-family: PingFang Regular;
-    src: url("../fonts/PingFang Regular_2.ttf");
-}
-@font-face {
-    font-family: PingFang Medium;
-    src: url("../fonts/PingFang Medium_2.ttf");
-}
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, tr, th, td {
     margin: 0;
     padding: 0;
@@ -18,7 +10,7 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
 body {
     color: #333;
     line-height: 1;
-    font-family: PingFang Medium;
+    font-family:"Microsoft Yahei","PingFang Regular","PingFang Medium","Hiragino Sans GB","Helvetica Neue",Helvetica,tahoma,arial,Verdana,sans-serif,"WenQuanYi Micro Hei";
     background: #f5f5f5;
 }
 /* H5 */
@@ -416,7 +408,6 @@ em, i {
     font-size: 0.4267rem;
     padding-top: 0.018rem;
     font-weight: bold;
-    font-family: PingFang Medium;
 }
 .relative {
     position: relative;
@@ -523,10 +514,10 @@ em, i {
     // vertical-align: middle;
     // margin-right: .32rem;
 }
-/*// .icon-we,.icon-network {*/
-/*//     width: 0.48rem;*/
-/*//     margin-right: 0.2667rem;*/
-/*// }*/
+// .icon-we,.icon-network {
+//     width: 0.48rem;
+//     margin-right: 0.2667rem;
+// }
 /*联系*/
 .contact .contact-con {
     padding-bottom: .6rem;

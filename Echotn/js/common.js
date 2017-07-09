@@ -101,7 +101,7 @@ $(function() {
     // download
     ! function() {
         if ($("body").hasClass("download")) {
-            var checkInputs = $(".check-inputs");
+            var checkInputs = $(".check-inputs")
                 //遍历所有的选择框
             for (var i = 0; i < checkInputs.length; i++) {
                 checkInputs[i].onclick = function() {
