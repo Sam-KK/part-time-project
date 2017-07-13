@@ -58,6 +58,9 @@
 						<a href="view/About/about_us.html">企业文化</a>
 					</div>
 				</li>
+				<li class="menu-items">
+					<a href="view/contact/contact-us.html" class="menu-label">联系ECHOTN</a>
+				</li>
 			</ul>
 		</div>
 	</div>
@@ -266,13 +269,13 @@
 					<i class="circle"></i><a href="view/new/news-sd.html">山东某银行ECHOTN易通第三年扩容计划实施</a><span class="new-time">03.10</span>
 				</li>
 				<li>
-					<i class="circle"></i><a href="view/new/news-nj-medicine.html">ECHOTN易通在南京医药恢复演练系统中顺利启用...</a><span class="new-time">03.10</span>
+					<i class="circle"></i><a href="view/new/news-nj-medicine.html">ECHOTN易通在南京医药恢复演练系统中顺利启用...</a><span class="new-time">05.20</span>
 				</li>
 				<li>
-					<i class="circle"></i><a href="view/new/news-cloud-services.html">ECHOTN云服务产品推广招待会成功举办</a><span class="new-time">03.10</span>
+					<i class="circle"></i><a href="view/new/news-cloud-services.html">ECHOTN云服务产品推广招待会成功举办</a><span class="new-time">11.02</span>
 				</li>
 				<li>
-					<i class="circle"></i><a href="view/new/news-visit.html">探访易通产品3C认证过程</a><span class="new-time">03.10</span>
+					<i class="circle"></i><a href="view/new/news-visit.html">探访ECHOTN易通产品3C认证过程</a><span class="new-time">01.23</span>
 				</li>
 			</ul>
 		</div>
@@ -287,7 +290,7 @@
 					<a href="view/About/about_us.html"><img src="images/common/pic_01.png" alt=""></a>
 				</div>
 				<div class="aboutusot">
-					<p class="about-text col">南京天顺迪诚科技有限公司(以下简称TSDC)成立于1999年，17年的数据保护、业务应急恢复经验使其成为行业领先的厂商。TSDC作为集生产、研发、制造为一体的IT企业，充分发挥"业精于专"和"求实创新"的精神，不断完善自身，拥有专业的技术团队。在北京设有研发中心...</p>
+					<p class="about-text col">南京天顺迪诚科技有限公司(以下简称TSDC)成立于1999年，<span id="year">2017</span>年的数据保护、业务应急恢复经验使其成为行业领先的厂商。TSDC作为集生产、研发、制造为一体的IT企业，充分发挥"业精于专"和"求实创新"的精神，不断完善自身，拥有专业的技术团队。在北京设有研发中心...</p>
 				</div>
 			</div>
 		</div>
@@ -412,5 +415,11 @@
 	<!-- mask -->
 	<div class="mask" id="mask"></div>
 </div>
+<script type="text/javascript">
+	var year = new Date().getFullYear() + 1;
+	var year = year + "";
+	var sub=year.substr(2,3);
+	$("#year").html(sub);
+</script>
 </body>
 </html>

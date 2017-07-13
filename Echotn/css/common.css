@@ -635,7 +635,7 @@ em, i {
 }
 .text-box .cloud-items img {
     display: block;
-    width: 1.2rem;
+    width: 1.1rem;
     margin-right: 0.3333rem;
 }
 .text-box .cloud-items .info {
@@ -648,7 +648,7 @@ em, i {
 .text-box .cloud-items .info span {
     display: block;
     color: #313131;
-    font-size: 0.3733rem;
+    font-size: 0.32rem;
     font-weight: bold;
     line-height: 0.56rem;
 }
