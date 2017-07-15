@@ -15,6 +15,11 @@
     padding-top: .4rem;
     padding-bottom: 0.64rem;
 }
+#step2 h4 {
+    color: #333333;
+    font-size: 0.4rem;
+    margin-bottom: 0.4667rem;
+}
 .download-module h4 {
     color: #333333;
     font-size: 0.4rem;
@@ -81,6 +86,10 @@
     -webkit-border-radius: 4px;
        -moz-border-radius: 4px;
             border-radius: 4px;
+    margin-bottom: 0.4rem;
+}
+.order-selected-items:last-child {
+    margin-bottom: 0;
 }
 .order-img {
     height: auto;
@@ -89,6 +98,9 @@
     -webkit-border-radius: 0.0533rem;
        -moz-border-radius: 0.0533rem;
             border-radius: 0.0533rem;
+}
+#step3 .checkbox-select label {
+    background: #999;
 }
 .select-img-box {
     width: 3.12rem;

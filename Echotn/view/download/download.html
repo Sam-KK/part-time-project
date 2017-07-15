@@ -69,86 +69,213 @@
                 <h1>在线下载</h1>
             </div>
             <div class="download-con content-wrap col">
-                <p class="order-text">选择您需要的产品，获得详细产品资料和专业电话咨询服务。</p>
-                <ul class="download-order">
-                    <li class="order-items">
-                        <div class="order-img">
-                            <img src="../../images/download/order_01.png" alt="">
+                <div id="step1">
+                    <p class="order-text">选择您需要的产品，获得详细产品资料和专业电话咨询服务。</p>
+                    <ul class="download-order">
+                        <li class="order-items">
+                            <div class="order-img">
+                                <img src="../../images/download/order_01.png" alt="">
+                            </div>
+                            <div class="order-info col">
+                                <h4 class="order-name">超融合设备</h4>
+                                <p class="order-type">(VDR-310)</p>
+                            </div>
+                            <div class="select-box">
+                                <label>
+                                    <input type="checkbox" class="checkbox-control check-inputs" name="optionsRadios" value="1">
+                                    <span class="select-text">选择</span>
+                                </label>
+                            </div>
+                        </li>
+                        <li class="order-items">
+                            <div class="order-img">
+                                <img src="../../images/download/order_02.png" alt="">
+                            </div>
+                            <div class="order-info col">
+                                <h4 class="order-name">超融合容灾系统</h4>
+                                <p class="order-type">(VDR-320)</p>
+                            </div>
+                            <div class="select-box">
+                                <label>
+                                    <input type="checkbox" class="checkbox-control check-inputs" name="optionsRadios" value="2">
+                                    <span class="select-text">选择</span>
+                                </label>
+                            </div>
+                        </li>
+                        <li class="order-items">
+                            <div class="order-img">
+                                <img src="../../images/download/order_03.png" alt="">
+                            </div>
+                            <div class="order-info col">
+                                <h4 class="order-name">应急恢复系统</h4>
+                                <p class="order-type">(VDR-410)</p>
+                            </div>
+                            <div class="select-box">
+                                <label>
+                                    <input type="checkbox" class="checkbox-control check-inputs" name="optionsRadios">
+                                    <span class="select-text">选择</span>
+                                </label>
+                            </div>
+                        </li>
+                        <li class="order-items">
+                            <div class="order-img">
+                                <img src="../../images/download/order_04.png" alt="">
+                            </div>
+                            <div class="order-info col">
+                                <h4 class="order-name">存储高可用系统</h4>
+                                <p class="order-type">(VDR-510)</p>
+                            </div>
+                            <div class="select-box">
+                                <label>
+                                    <input type="checkbox" class="checkbox-control check-inputs" name="optionsRadios">
+                                    <span class="select-text">选择</span>
+                                </label>
+                            </div>
+                        </li>
+                        <li class="order-items">
+                            <div class="order-img">
+                                <img src="../../images/download/order_05.png" alt="">
+                            </div>
+                            <div class="order-info col">
+                                <h4 class="order-name">异地容灾设备</h4>
+                                <p class="order-type">(VDR-T10)</p>
+                            </div>
+                            <div class="select-box">
+                                <label>
+                                    <input type="checkbox" class="checkbox-control check-inputs" name="optionsRadios">
+                                    <span class="select-text">选择</span>
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="step2" style="display: none;">
+                    <p class="order-text">选择您需要的产品，获得详细产品资料和专业电话咨询服务。</p>
+                    <h4>您已选择</h4>
+                    <div class="select-shop" id="select-shop"></div>
+                    <hr class="inline">
+                    <div class="download-module order-from">
+                        <h4>联系方式<small>(请填写您的联系方式，方便我们与您取得联系)</small></h4>
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label for="" class="control-label">姓名</label>
+                                <input id="name" type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="control-label">手机</label>
+                                <input id="phone" type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="control-label">单位</label>
+                                <input id="company" type="text" class="form-control">
+                            </div>
+                        </form>
+                    </div>
+                    <hr class="inline">
+                    <div class="download-module need">
+                        <h4>您的需求</h4>
+                        <div class="check-box col">
+                            <div class="checkbox-inline">
+                                <label>
+                                    <span class="radio-box">
+                                        <input type="checkbox" name="options" value="option1">
+                                        <i></i>
+                                    </span>
+                                    设备冗杂
+                                </label>
+                            </div>
+                            <div class="checkbox-inline">
+                                <label>
+                                    <span class="radio-box">
+                                        <input type="checkbox" name="options" value="option1">
+                                        <i></i>
+                                    </span>成本高
+                                </label>
+                            </div>
+                            <div class="checkbox-inline">
+                                <label>
+                                    <span class="radio-box">
+                                        <input type="checkbox" name="options" value="option1">
+                                        <i></i>
+                                    </span>数据安全隐患
+                                </label>
+                            </div>
+                            <div class="checkbox-inline">
+                                <label>
+                                    <span class="radio-box">
+                                        <input type="checkbox" name="options" value="option1">
+                                        <i></i>
+                                    </span>备份单一
+                                </label>
+                            </div>
+                            <div class="checkbox-inline">
+                                <label>
+                                    <span class="radio-box">
+                                        <input type="checkbox" name="options" value="option1">
+                                        <i></i>
+                                    </span>数据恢复耗时
+                                </label>
+                            </div>
+                            <div class="checkbox-inline">
+                                <label>
+                                    <span class="radio-box">
+                                        <input type="checkbox" name="options" value="option1">
+                                        <i></i>
+                                    </span>恢复演练困难
+                                </label>
+                            </div>
+                            <div class="checkbox-inline">
+                                <label>
+                                    <span class="radio-box">
+                                        <input type="checkbox" name="options" value="option1">
+                                        <i></i>
+                                    </span>容灾条件限制
+                                </label>
+                            </div>
+                            <div class="checkbox-inline">
+                                <label>
+                                    <span class="radio-box">
+                                        <input type="checkbox" name="options" value="option1">
+                                        <i></i>
+                                    </span>无异地容灾
+                                </label>
+                            </div>
+                            <div class="checkbox-inline">
+                                <label>
+                                    <span class="radio-box">
+                                        <input type="checkbox" name="options" value="option1">
+                                        <i></i>
+                                    </span>系统中断危机
+                                </label>
+                            </div>
+                            <div class="checkbox-inline">
+                                <label>
+                                    <span class="radio-box">
+                                        <input type="checkbox" name="options" value="option1">
+                                        <i></i>
+                                    </span>资源非透明化
+                                </label>
+                            </div>
+                            <div class="form-group area-group">
+                                <textarea class="" placeholder="其他原因，请输入..." rows="4"></textarea>
+                            </div>
                         </div>
-                        <div class="order-info col">
-                            <h4 class="order-name">超融合设备</h4>
-                            <p class="order-type">(VDR-310)</p>
-                        </div>
-                        <div class="select-box">
-                            <label>
-                                <input type="checkbox" class="checkbox-control check-inputs" name="optionsRadios">
-                                <span class="select-text">选择</span>
-                            </label>
-                        </div>
-                    </li>
-                    <li class="order-items">
-                        <div class="order-img">
-                            <img src="../../images/download/order_02.png" alt="">
-                        </div>
-                        <div class="order-info col">
-                            <h4 class="order-name">超融合容灾系统</h4>
-                            <p class="order-type">(VDR-320)</p>
-                        </div>
-                        <div class="select-box">
-                            <label>
-                                <input type="checkbox" class="checkbox-control check-inputs" name="optionsRadios">
-                                <span class="select-text">选择</span>
-                            </label>
-                        </div>
-                    </li>
-                    <li class="order-items">
-                        <div class="order-img">
-                            <img src="../../images/download/order_03.png" alt="">
-                        </div>
-                        <div class="order-info col">
-                            <h4 class="order-name">应急恢复系统</h4>
-                            <p class="order-type">(VDR-410)</p>
-                        </div>
-                        <div class="select-box">
-                            <label>
-                                <input type="checkbox" class="checkbox-control check-inputs" name="optionsRadios">
-                                <span class="select-text">选择</span>
-                            </label>
-                        </div>
-                    </li>
-                    <li class="order-items">
-                        <div class="order-img">
-                            <img src="../../images/download/order_04.png" alt="">
-                        </div>
-                        <div class="order-info col">
-                            <h4 class="order-name">存储高可用系统</h4>
-                            <p class="order-type">(VDR-510)</p>
-                        </div>
-                        <div class="select-box">
-                            <label>
-                                <input type="checkbox" class="checkbox-control check-inputs" name="optionsRadios">
-                                <span class="select-text">选择</span>
-                            </label>
-                        </div>
-                    </li>
-                    <li class="order-items">
-                        <div class="order-img">
-                            <img src="../../images/download/order_05.png" alt="">
-                        </div>
-                        <div class="order-info col">
-                            <h4 class="order-name">异地容灾设备</h4>
-                            <p class="order-type">(VDR-T10)</p>
-                        </div>
-                        <div class="select-box">
-                            <label>
-                                <input type="checkbox" class="checkbox-control check-inputs" name="optionsRadios">
-                                <span class="select-text">选择</span>
-                            </label>
-                        </div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
+                <div id="step3" style="display: none;">
+                    <p class="order-text">信息填写已完成。</p>
+                    <div class="payment-info">
+                        <figure>
+                            <img src="../../images/icon/over.png" alt="">
+                            <p>下单已完成！</p>
+                            <figcaption>请保持电话畅通，稍后会有客服人员与您联系。 </figcaption>
+                        </figure>
+                    </div>
+                    <div class="select-shop" id="select-shop"></div>
+                </div>
                 <div class="button-group">
-                    <a class="next-step evevt-nxnt" href="download2.html">下一步</a>
+                    <a class="next-step evevt-nxnt1" href="javascript:void(0);">下一步</a>
+                    <a class="next-step evevt-nxnt2" href="javascript:void(0);" style="display: none;">下一步</a>
                 </div>
             </div>
         </div>
@@ -283,5 +410,113 @@
     <!-- mask -->
     <div class="mask" id="mask"></div>
 </div>
+<script type="text/javascript">
+$(function () {
+    // 下一步
+    $(".evevt-nxnt1").click(function() {
+        if ($(".order-items .select-box input").attr('checked',false)) {
+            $("#select-shop").html("您还未选择任何产品");
+        }
+        $("#step1").hide();
+        $("#step2").show();
+        $(".evevt-nxnt1").hide();
+        $(".evevt-nxnt2").show();
+    });
+    $(".evevt-nxnt2").click(function() {
+        var name = $("#name").val(),
+        phone = $("#phone").val(),
+        textarea = $("textarea").val(),
+        company = $("#company").val();
+        //console.log(radio);
+        if (!$("#select-shop .order-selected-items").length > 0 && name == "" && phone == "" && company == "" && textarea == "") {
+            $("#step1").hide();
+            $("#step2").hide();
+            $("#step3").show();
+            $("#select-shop").html("您还未选择任何产品");
+            $("#step3 > .order-text").html("您未填写信息，请返回补充完整。");
+            $("#step3 > .payment-info").hide();
+        }else if ( name == "" && phone == "" && company == "") {
+            $("#step1").hide();
+            $("#step2").hide();
+            $("#step3").show();
+            $("#step3 > .order-text").html("您未填写信息，请返回补充完整。");
+            $("#step3 > .payment-info").hide();
+        }else if (!$(".download-module .checkbox-inline input[type='checkbox']").attr('checked',true)) {
+            $("#step1").hide();
+            $("#step2").hide();
+            $("#step3").show();
+            $("#step3 > .order-text").html("您未填写信息，请返回补充完整。");
+            $("#step3 > .payment-info").hide();
+        }else {
+            $("#step1").hide();
+            $("#step2").hide();
+            $("#step3").show();
+            $("#step3 .select-shop").html($("#step2 .select-shop").html())
+            $(".button-group").hide();
+        }
+    });
+    // 获取图片
+    var checkInputs =$(".order-items .select-box input");
+    //遍历所有的选择框
+    for(var i = 0; i < checkInputs.length ; i++){
+        checkInputs[i].onclick = function () {
+            if (this.checked == true) {
+                var srcJson = [];
+                var len = $("input[type='checkbox']:checked").length;
+                var imgSrc = $(this).parents(".order-items").find("img").attr("src"),
+                imgname = $(this).parents(".order-items").find(".order-name").html(),
+                type = $(this).parents(".order-items").find(".order-type").html();
+                srcJson.push(imgSrc);
+                console.log(imgname);
+                console.log(imgSrc);
+                console.log(len);
+
+                $(".evevt-nxnt1").click(function () {
+                    var html = "";
+                    for (var i = 0; i < len; i++) {
+                        html = '<div class="order-items order-selected-items"><div class="order-img select-img-box"><img src="'+srcJson+'" alt=""></div><div class="order-info select-info col"><h4 class="order-name">'+imgname+'</h4><p class="order-type">'+type+'</p></div><div class="checkbox-select"><label></label></div></div>'
+                    }
+                    console.log(html);
+                    $("#select-shop").html(html);
+                });
+            }else {
+                $("#select-shop").html("您还未选择任何产品");
+            }
+        }
+    }
+    // $(".order-items .select-box input").click(function () {
+    //     var len = 0;
+    //     if ($(this).is(':checked')) {
+    //         var srcJson = [];
+    //         var len = $("input[type='checkbox']:checked").length;
+    //         var imgSrc = $(this).parents(".order-items").find("img").attr("src"),
+    //         name = $(this).parents(".order-items").find(".order-name").html(),
+    //         type = $(this).parents(".order-items").find(".order-type").html();
+    //         srcJson.push(imgSrc);
+    //         console.log(name);
+    //         console.log(imgSrc);
+    //         console.log(len);
+
+    //         $(".evevt-nxnt1").click(function () {
+    //             var html = "";
+    //             for (var i = 0; i < len; i++) {
+    //                 html = '<div class="order-items order-selected-items"><div class="order-img select-img-box"><img src="'+srcJson+'" alt=""></div><div class="order-info select-info col"><h4 class="order-name">'+name+'</h4><p class="order-type">'+type+'</p></div><div class="checkbox-select"><label></label></div></div>'
+    //             }
+    //             console.log(html);
+    //             $("#select-shop").html(html);
+    //         });
+    //     } else {
+    //         $(".evevt-nxnt2").click(function() {
+    //         $("#step1").hide();
+    //         $("#step2").hide();
+    //         $("#step3").show();
+    //         $("#step3 > .order-text").html("您未填写信息，请返回补充完整。")
+    //     }
+
+    //     var html = "";
+    // });
+});
+</script>
+<!--  -->
 </body>
 </html>
