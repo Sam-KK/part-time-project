@@ -542,6 +542,23 @@ em, i {
     width: 0.8533rem;
     vertical-align: top;
 }
+.contact-info .sq {
+    border-top: 1px dotted #e6e6e6;
+    margin-top: 0.4rem;
+    padding-top: 0.54665rem;
+}
+.contact-info .sq a {
+    display: block;
+    font-size: 0.4rem;
+    position: relative;
+    margin-bottom: 0.6667rem;
+}
+.contact-info .sq span {
+    display: inline-block;
+    width: 0.48rem;
+    margin-right: 0.2rem;
+    vertical-align: middle;
+}
 .contact-info p {
     color: #333;
     font-size: 0.4rem;
@@ -648,7 +665,7 @@ em, i {
 .text-box .cloud-items .info span {
     display: block;
     color: #313131;
-    font-size: 0.32rem;
+    font-size: 0.3733rem;
     font-weight: bold;
     line-height: 0.56rem;
 }
