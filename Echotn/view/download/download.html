@@ -276,6 +276,7 @@
                 <div class="button-group">
                     <a class="next-step evevt-nxnt1" href="javascript:void(0);">下一步</a>
                     <a class="next-step evevt-nxnt2" href="javascript:void(0);" style="display: none;">下一步</a>
+                    <a class="next-step evevt-nxnt3" href="javascript:void(0);" style="display: none;">重新下单</a>
                 </div>
             </div>
         </div>
@@ -421,6 +422,7 @@ $(function () {
         $("#step2").show();
         $(".evevt-nxnt1").hide();
         $(".evevt-nxnt2").show();
+        $(".evevt-nxnt3").hide();
     });
     $(".evevt-nxnt2").click(function() {
         var name = $("#name").val(),
@@ -451,9 +453,14 @@ $(function () {
             $("#step1").hide();
             $("#step2").hide();
             $("#step3").show();
+            $(".evevt-nxnt2").hide();
+            $(".evevt-nxnt3").show();
             $("#step3 .select-shop").html($("#step2 .select-shop").html())
             $(".button-group").hide();
         }
+    });
+    $(".evevt-nxnt3").click(function() {
+        refresh();
     });
     // 获取图片
     var checkInputs =$(".order-items .select-box input");
